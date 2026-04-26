@@ -150,13 +150,19 @@ def load_registry(registry_dir: Path) -> Registry:
     relationships_path = registry_dir / "relationships.yaml"
     if relationships_path.exists():
         docs = load_yaml_file(relationships_path)
-        registry.relationships = [Relationship(**doc) for doc in docs]
+        items = []
+        for doc in docs:
+            items.extend(doc if isinstance(doc, list) else [doc])
+        registry.relationships = [Relationship(**item) for item in items]
 
     # Load chapters
     chapters_path = registry_dir / "chapters.yaml"
     if chapters_path.exists():
         docs = load_yaml_file(chapters_path)
-        registry.chapters = [Chapter(**doc) for doc in docs]
+        items = []
+        for doc in docs:
+            items.extend(doc if isinstance(doc, list) else [doc])
+        registry.chapters = [Chapter(**item) for item in items]
 
     # Load wiki entries
     wiki_dir = registry_dir / "wiki"
