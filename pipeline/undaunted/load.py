@@ -42,10 +42,13 @@ def load_entity_yaml(
     documents = load_yaml_file(path)
     entities = []
     for doc in documents:
-        try:
-            entities.append(entity_class(**doc))
-        except Exception as e:
-            raise ValueError(f"Error loading entity from {path}: {e}") from e
+        # Handle both list-of-dicts (single YAML doc that is a list) and multiple docs
+        items = doc if isinstance(doc, list) else [doc]
+        for item in items:
+            try:
+                entities.append(entity_class(**item))
+            except Exception as e:
+                raise ValueError(f"Error loading entity from {path}: {e}") from e
     return entities
 
 
