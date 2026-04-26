@@ -6,6 +6,16 @@
   description: |
     Historic town in White Russia, center of Chabad for 102 years.
 
+- id: place.leningrad
+  type: place
+  primary_name: Leningrad
+  aliases:
+    - Petrograd
+    - St. Petersburg
+    - Saint Petersburg
+  description: |
+    Soviet-era name for St. Petersburg; site of the Rayatz's arrest in 1927.
+
 - id: place.rostov
   type: place
   primary_name: Rostov
