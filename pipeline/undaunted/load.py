@@ -35,9 +35,7 @@ def load_yaml_file(path: Path) -> List[Dict]:
     return documents
 
 
-def load_entity_yaml(
-    path: Path, entity_class
-) -> List:
+def load_entity_yaml(path: Path, entity_class) -> List:
     """Load a YAML file of entities."""
     documents = load_yaml_file(path)
     entities = []

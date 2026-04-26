@@ -10,7 +10,6 @@ from pydantic import BaseModel, Field, field_validator
 from typing import Literal, Optional, List, Dict, Any
 from datetime import date
 
-
 # Type definitions
 EntityType = Literal["person", "place", "event", "concept", "quote", "time"]
 

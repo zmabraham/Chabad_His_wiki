@@ -9,7 +9,6 @@ from .schema import Registry
 from .load import load_registry
 from pathlib import Path
 
-
 # Common English stopwords that should not be aliases
 STOPWORDS = {
     "the",
@@ -162,9 +161,7 @@ def _check_duplicate_ids(registry: Registry, report: ValidationReport):
     for entity in registry.all_entities():
         if entity.id in seen:
             duplicates.add(entity.id)
-            report.add_error(
-                "duplicate_id", f"Duplicate entity ID: {entity.id}", entity.id
-            )
+            report.add_error("duplicate_id", f"Duplicate entity ID: {entity.id}", entity.id)
         seen.add(entity.id)
 
 

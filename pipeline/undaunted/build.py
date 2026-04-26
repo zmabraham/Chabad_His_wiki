@@ -49,12 +49,9 @@ def build_json(
 
     # Relationships
     relationships_data = [
-        {"from": rel.from_, "rel": rel.rel, "to": rel.to}
-        for rel in registry.relationships
+        {"from": rel.from_, "rel": rel.rel, "to": rel.to} for rel in registry.relationships
     ]
-    (output_dir / "relationships.json").write_text(
-        json.dumps(relationships_data, indent=2)
-    )
+    (output_dir / "relationships.json").write_text(json.dumps(relationships_data, indent=2))
 
     # Chapters
     chapters_data = [
@@ -76,7 +73,10 @@ def build_json(
                 {
                     "heading": s.heading,
                     "paragraphs": [
-                        {"text": p.text, "citations": [{"page": c.page, "label": c.label} for c in p.citations]}
+                        {
+                            "text": p.text,
+                            "citations": [{"page": c.page, "label": c.label} for c in p.citations],
+                        }
                         for p in s.paragraphs
                     ],
                 }

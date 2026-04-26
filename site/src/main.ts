@@ -76,13 +76,13 @@ class UndauntedApp {
   }
 
   private async loadEntities() {
-    const response = await fetch('/data/entities.json');
+    const response = await fetch('./data/entities.json');
     if (!response.ok) throw new Error('Failed to load entities');
     this.entities = await response.json();
   }
 
   private async loadChapters() {
-    const response = await fetch('/data/chapters.json');
+    const response = await fetch('./data/chapters.json');
     if (!response.ok) throw new Error('Failed to load chapters');
     this.chapters = await response.json();
   }

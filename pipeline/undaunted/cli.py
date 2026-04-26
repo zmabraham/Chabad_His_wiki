@@ -18,9 +18,7 @@ def main():
 
 
 @main.command()
-@click.argument(
-    "registry_dir", type=click.Path(exists=True, path_type=Path), default="registry"
-)
+@click.argument("registry_dir", type=click.Path(exists=True, path_type=Path), default="registry")
 def validate(registry_dir: Path):
     """Validate the registry for errors."""
     click.echo(f"Validating registry at: {registry_dir}")
@@ -34,9 +32,7 @@ def validate(registry_dir: Path):
 
 
 @main.command()
-@click.argument(
-    "registry_dir", type=click.Path(exists=True, path_type=Path), default="registry"
-)
+@click.argument("registry_dir", type=click.Path(exists=True, path_type=Path), default="registry")
 @click.option("--output", "-o", type=click.Path(path_type=Path), default="site/public/data")
 @click.option("--no-corpus", is_flag=True, help="Build without corpus (registry-only)")
 def build(registry_dir: Path, output: Path, no_corpus: bool):
@@ -62,6 +58,7 @@ def build(registry_dir: Path, output: Path, no_corpus: bool):
 
     # Generate manifest
     from datetime import datetime
+
     manifest = {
         "version": datetime.now().strftime("%Y-%m-%d-%H%M"),
         "page_range": [19, 381],
@@ -86,18 +83,13 @@ def build(registry_dir: Path, output: Path, no_corpus: bool):
             entity_dict["died"] = entity.died
         entities_data.append(entity_dict)
 
-    (output / "entities.json").write_text(
-        json.dumps(entities_data, indent=2, ensure_ascii=False)
-    )
+    (output / "entities.json").write_text(json.dumps(entities_data, indent=2, ensure_ascii=False))
 
     # Generate relationships.json
     relationships_data = [
-        {"from": rel.from_, "rel": rel.rel, "to": rel.to}
-        for rel in registry.relationships
+        {"from": rel.from_, "rel": rel.rel, "to": rel.to} for rel in registry.relationships
     ]
-    (output / "relationships.json").write_text(
-        json.dumps(relationships_data, indent=2)
-    )
+    (output / "relationships.json").write_text(json.dumps(relationships_data, indent=2))
 
     # Generate chapters.json
     chapters_data = [
