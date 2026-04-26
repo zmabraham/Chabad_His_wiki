@@ -113,7 +113,7 @@ class Relationship(BaseModel):
 class Chapter(BaseModel):
     """A chapter in the book."""
 
-    num: int = Field(ge=1, description="Chapter number")
+    num: int = Field(ge=0, description="Chapter number (0 = preface)")
     title: str
     first: int = Field(description="First PDF page (1-indexed)")
     last: int = Field(description="Last PDF page (1-indexed)")
