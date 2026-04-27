@@ -40,7 +40,7 @@ def build_json(
         if hasattr(entity, "born") and entity.born:
             entity_dict["born"] = entity.born
         if hasattr(entity, "died") and entity.died:
-            entity_dict["died"] = entity.dorn if getattr(entity, "dorn", None) else entity.died
+            entity_dict["died"] = entity.died
         entities_data.append(entity_dict)
 
     (output_dir / "entities.json").write_text(

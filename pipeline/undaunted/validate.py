@@ -2,7 +2,7 @@
 Registry validation - checks for common errors and inconsistencies.
 """
 
-from typing import Set, List, Tuple, Optional
+from typing import Set, List, Tuple, Optional, Dict
 from collections import defaultdict
 
 from .schema import Registry

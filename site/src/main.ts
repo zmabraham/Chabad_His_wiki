@@ -1,9 +1,7 @@
 /**
- * Undaunted Knowledge System - Main Viewer
- * A three-layer knowledge system: Source → Index → Wiki
+ * Undaunted Knowledge System — Main Viewer
  */
 
-// Type definitions
 type EntityType = 'person' | 'place' | 'event' | 'time' | 'quote' | 'concept';
 
 interface Entity {
@@ -44,229 +42,342 @@ interface Manifest {
   wiki_ids: string[];
 }
 
-// Application State
 class UndauntedApp {
   private entities: Entity[] = [];
+  private entityMap: Map<string, Entity> = new Map();
   private chapters: Chapter[] = [];
-  private pages: Map<number, Page> = new Map();
+  private currentChapter = 0;
+  private currentPages: Page[] = [];
   private selectedEntity: string | null = null;
   private filterType: EntityType | 'all' = 'all';
+  private searchQuery = '';
 
-  // Color palette
-  private readonly colors = {
+  private readonly ENTITY_COLORS: Record<string, string> = {
     person: '#4A6FA5',
     place: '#8B7355',
     event: '#C45C3E',
     time: '#6B8E4F',
     quote: '#7B6B8E',
-    concept: '#A67C52'
+    concept: '#A67C52',
+  };
+
+  private readonly CHAPTER_TITLES: Record<number, string> = {
+    0: 'Preface',
+    1: 'Lubavitch',
+    2: 'Tomchei Temimim',
+    3: 'The Secret Covenant',
+    4: 'Armed Men at Midnight',
+    5: 'Exile to Riga',
+    6: 'The Royal Wedding',
+    7: 'The Voyage',
+    8: 'Poland – Starting Anew',
+    9: 'The World Is Shattered',
+    10: 'America Iz Nisht Anderesh',
+    11: 'A Global Vision',
   };
 
   async init() {
     try {
-      await this.loadEntities();
-      await this.loadChapters();
-      await this.loadPages();
+      await this.loadData();
+      this.buildEntityMap();
       this.render();
-      this.setupFilters();
+      this.setupEventListeners();
+      await this.loadChapter(0);
     } catch (error) {
-      this.showError('Failed to load data');
+      this.showError((error as Error).message);
       console.error(error);
     }
   }
 
-  private async loadEntities() {
-    const response = await fetch('./data/entities.json');
-    if (!response.ok) throw new Error('Failed to load entities');
-    this.entities = await response.json();
-  }
+  private async loadData() {
+    const [manifestRes, entitiesRes] = await Promise.all([
+      fetch('./data/manifest.json'),
+      fetch('./data/entities.json'),
+    ]);
+    if (!manifestRes.ok) throw new Error('Failed to load manifest');
+    if (!entitiesRes.ok) throw new Error('Failed to load entities');
 
-  private async loadChapters() {
-    const response = await fetch('./data/chapters.json');
-    if (!response.ok) throw new Error('Failed to load chapters');
-    this.chapters = await response.json();
-  }
+    const manifest: Manifest = await manifestRes.json();
+    this.entities = await entitiesRes.json();
 
-  private async loadPages() {
-    // For now, load the chapter files we have
-    for (let i = 0; i < 12; i++) {
-      try {
-        const response = await fetch(`/corpus/chapter_${i}.txt`);
-        if (response.ok) {
-          const text = await response.text();
-          const page: Page = {
-            pdf_page: i + 19,
-            book_page: i + 1,
-            chapter: i,
-            text: text,
-            tags: this.tagPage(text)
-          };
-          this.pages.set(i, page);
-        }
-      } catch (e) {
-        console.log(`Could not load chapter ${i}`);
+    // Try chapters.json (handle both old {num,file} and new {num,title,first,last} formats)
+    try {
+      const chapRes = await fetch('./data/chapters.json');
+      if (chapRes.ok) {
+        const raw: Array<{ num: number; title?: string; first?: number; last?: number }> =
+          await chapRes.json();
+        this.chapters = raw
+          .map((c) => ({
+            num: c.num,
+            title: c.title || this.CHAPTER_TITLES[c.num] || `Chapter ${c.num}`,
+            first: c.first || 0,
+            last: c.last || 0,
+          }))
+          .sort((a, b) => a.num - b.num);
       }
+    } catch (_) { /* ignore */ }
+
+    if (this.chapters.length === 0) {
+      this.chapters = Object.entries(this.CHAPTER_TITLES).map(([num, title]) => ({
+        num: parseInt(num), title, first: 0, last: 0,
+      })).sort((a, b) => a.num - b.num);
+    }
+
+    const statsEl = document.getElementById('stats');
+    if (statsEl) {
+      statsEl.textContent =
+        `${this.entities.length} entities · ${this.chapters.length} chapters · built ${manifest.version}`;
     }
   }
 
-  private tagPage(text: string): TagSpan[] {
-    const tags: TagSpan[] = [];
-    const tagPatterns = {
-      'person.yosef_yitzchak': ['Rabbi Yosef Yitzchak', 'Yosef Yitzchak', 'the Rayatz', 'The Rayatz', 'Rayatz'],
-      'person.shalom_dovber': ['Rabbi Shalom Dovber', 'the Rashab', 'The Rashab', 'Rashab'],
-      'person.menachem_mendel': ['Rabbi Menachem Mendel', 'the Ramash', 'The Ramash', 'Ramash'],
-      'place.lubavitch': ['Lubavitch', 'Lyubavichi'],
-      'place.warsaw': ['Warsaw'],
-      'place.new_york': ['New York'],
-      'time.1927': ['1927'],
-      'time.1940': ['1940']
-    };
+  private buildEntityMap() {
+    for (const entity of this.entities) this.entityMap.set(entity.id, entity);
+  }
 
-    for (const [entityId, patterns] of Object.entries(tagPatterns)) {
-      for (const pattern of patterns) {
-        let start = 0;
-        while (true) {
-          const idx = text.indexOf(pattern, start);
-          if (idx === -1) break;
-          tags.push({
-            start: idx,
-            end: idx + pattern.length,
-            entity_id: entityId
-          });
-          start = idx + pattern.length;
-        }
-      }
+  async loadChapter(chapterNum: number) {
+    this.currentChapter = chapterNum;
+    this.currentPages = [];
+
+    const container = document.getElementById('source-content');
+    if (container) container.innerHTML = '<div class="loading">Loading…</div>';
+
+    // Load all pages and filter by chapter
+    const pages: Page[] = [];
+    const fetches: Promise<void>[] = [];
+    for (let p = 19; p <= 413; p++) {
+      fetches.push(
+        fetch(`./data/pages/${p}.json`)
+          .then((r) => (r.ok ? r.json() : null))
+          .then((page: Page | null) => {
+            if (page && page.chapter === chapterNum) pages.push(page);
+          })
+          .catch(() => { /* ignore missing pages */ }),
+      );
     }
+    await Promise.all(fetches);
 
-    return tags;
+    this.currentPages = pages.sort((a, b) => a.pdf_page - b.pdf_page);
+    this.renderSourceText();
+    this.updateChapterNav();
   }
 
   private render() {
-    this.updateStats();
     this.renderEntityList();
-    this.renderSourceText();
+    this.renderChapterNav();
   }
 
-  private updateStats() {
-    const stats = document.getElementById('stats')!;
-    stats.textContent = `${this.entities.length} entities • ${this.chapters.length} chapters • ${this.pages.size} pages`;
+  private renderChapterNav() {
+    const nav = document.getElementById('chapter-nav');
+    if (!nav) return;
+    nav.innerHTML = this.chapters
+      .map(
+        (ch) =>
+          `<div class="chapter-nav-item ${ch.num === this.currentChapter ? 'active' : ''}"
+                data-chapter="${ch.num}">
+             <span class="chapter-num">${ch.num === 0 ? 'P' : ch.num}</span>
+             <span class="chapter-name">${ch.title}</span>
+           </div>`,
+      )
+      .join('');
+  }
+
+  private updateChapterNav() {
+    document.querySelectorAll<HTMLElement>('.chapter-nav-item').forEach((el) => {
+      el.classList.toggle('active', parseInt(el.dataset.chapter ?? '-1') === this.currentChapter);
+    });
   }
 
   private renderEntityList() {
-    const container = document.getElementById('entity-list')!;
+    const container = document.getElementById('entity-list');
+    if (!container) return;
 
     let filtered = this.entities;
-    if (this.filterType !== 'all') {
-      filtered = this.entities.filter(e => e.type === this.filterType);
+    if (this.filterType !== 'all') filtered = filtered.filter((e) => e.type === this.filterType);
+    if (this.searchQuery) {
+      const q = this.searchQuery.toLowerCase();
+      filtered = filtered.filter(
+        (e) =>
+          e.primary_name.toLowerCase().includes(q) ||
+          e.aliases.some((a) => a.toLowerCase().includes(q)),
+      );
     }
 
-    container.innerHTML = filtered.map(entity => `
-      <div class="entity-item ${this.selectedEntity === entity.id ? 'selected' : ''}"
-           data-entity-id="${entity.id}"
-           onclick="app.selectEntity('${entity.id}')">
-        <div class="entity-name">${entity.primary_name}</div>
-        <div class="entity-type">${entity.type}</div>
-      </div>
-    `).join('');
+    container.innerHTML = filtered
+      .map((entity) => {
+        const color = this.ENTITY_COLORS[entity.type] || '#888';
+        const sel = this.selectedEntity === entity.id;
+        return `<div class="entity-item${sel ? ' selected' : ''}"
+                     data-entity-id="${entity.id}"
+                     style="border-left:3px solid ${color}${sel ? ';background:rgba(255,255,255,0.06)' : ''}">
+                  <div class="entity-name">${entity.primary_name}</div>
+                  <div class="entity-type" style="color:${color}">${entity.type}</div>
+                </div>`;
+      })
+      .join('');
   }
 
   private renderSourceText() {
-    const container = document.getElementById('source-content')!;
+    const container = document.getElementById('source-content');
+    if (!container) return;
 
-    let html = '';
-
-    // Render chapters
-    for (const [num, page] of this.pages) {
-      const chapter = this.chapters.find(ch => ch.num === num);
-
-      html += `
-        <div class="chapter-divider">
-          <div class="chapter-title">${chapter?.title || `Chapter ${num}`}</div>
-        </div>
-        <div class="source-text">${this.renderTaggedText(page)}</div>
-      `;
+    if (this.currentPages.length === 0) {
+      container.innerHTML = '<div class="loading">No pages found for this chapter.</div>';
+      return;
     }
 
-    container.innerHTML = html || '<div class="loading">No source text available</div>';
+    const chapter = this.chapters.find((c) => c.num === this.currentChapter);
+    let html = `<div class="chapter-header">
+      <div class="chapter-header-num">${this.currentChapter === 0 ? 'Preface' : `Chapter ${this.currentChapter}`}</div>
+      <div class="chapter-header-title">${chapter?.title ?? ''}</div>
+      <div class="chapter-header-pages">${this.currentPages.length} pages</div>
+    </div>`;
+
+    for (const page of this.currentPages) {
+      html += `<div class="page-block" id="page-${page.pdf_page}">
+        <div class="page-num">p. ${page.book_page}</div>
+        <div class="page-text">${this.renderTaggedText(page)}</div>
+      </div>`;
+    }
+
+    container.innerHTML = html;
+    container.scrollTop = 0;
   }
 
   private renderTaggedText(page: Page): string {
     const { text, tags } = page;
+    if (!tags || tags.length === 0) return this.escHtml(text);
 
-    if (!tags || tags.length === 0) {
-      return text;
-    }
+    // Filter valid tags and sort by start position
+    const sorted = [...tags]
+      .filter(
+        (t) =>
+          t.entity_id !== null &&
+          t.start >= 0 &&
+          t.end > t.start &&
+          t.end <= text.length,
+      )
+      .sort((a, b) => a.start - b.start);
 
-    // Sort tags by position (descending)
-    const sortedTags = [...tags].sort((a, b) => b.start - a.start);
-
-    let result = '';
-    let lastEnd = text.length;
-
-    for (const tag of sortedTags) {
-      // Add text after this tag
-      if (tag.end < lastEnd) {
-        result += this.escapeHtml(text.substring(tag.end, lastEnd));
+    // Resolve overlaps: keep first-starting tag
+    const clean: TagSpan[] = [];
+    let lastEnd = 0;
+    for (const tag of sorted) {
+      if (tag.start >= lastEnd) {
+        clean.push(tag);
+        lastEnd = tag.end;
       }
-
-      // Add the tagged text
-      const taggedText = text.substring(tag.start, tag.end);
-      const entity = this.entities.find(e => e.id === tag.entity_id);
-      const entityType = entity?.type || 'concept';
-      const color = this.colors[entityType as keyof typeof this.colors] || '#666';
-
-      result += `<span class="entity-tag ${entityType}"
-                     data-entity-id="${tag.entity_id}"
-                     style="${this.selectedEntity === tag.entity_id ? 'background:' + color + ' !important;color:white;' : ''}"
-                     onclick="app.selectEntity('${tag.entity_id}')">${taggedText}</span>`;
-
-      lastEnd = tag.start;
     }
 
-    // Add remaining text
-    result += this.escapeHtml(text.substring(0, lastEnd));
+    // Build HTML left-to-right
+    let result = '';
+    let pos = 0;
 
-    return result.split('').reverse().join('');
+    for (const tag of clean) {
+      if (tag.start > pos) result += this.escHtml(text.slice(pos, tag.start));
+
+      const tagText = text.slice(tag.start, tag.end);
+      const entity = this.entityMap.get(tag.entity_id!);
+      const type = entity?.type ?? 'concept';
+      const color = this.ENTITY_COLORS[type] ?? '#888';
+      const isSel = this.selectedEntity === tag.entity_id;
+      const style = isSel
+        ? `background:${color};color:#fff;border-radius:2px;padding:0 2px`
+        : `border-bottom:1px solid ${color};cursor:pointer`;
+
+      result +=
+        `<span class="entity-tag ${type}${isSel ? ' selected' : ''}"` +
+        ` data-entity-id="${tag.entity_id}"` +
+        ` style="${style}"` +
+        ` title="${entity?.primary_name ?? tag.entity_id}">${this.escHtml(tagText)}</span>`;
+
+      pos = tag.end;
+    }
+
+    if (pos < text.length) result += this.escHtml(text.slice(pos));
+    return result;
   }
 
-  private escapeHtml(text: string): string {
-    const div = document.createElement('div');
-    div.textContent = text;
-    return div.innerHTML;
+  private escHtml(s: string): string {
+    return s
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
   }
 
-  private setupFilters() {
-    const buttons = document.querySelectorAll('.filter-btn');
-    buttons.forEach(btn => {
+  private setupEventListeners() {
+    document.getElementById('entity-list')?.addEventListener('click', (e) => {
+      const item = (e.target as HTMLElement).closest<HTMLElement>('[data-entity-id]');
+      if (item?.dataset.entityId) this.selectEntity(item.dataset.entityId);
+    });
+
+    document.getElementById('chapter-nav')?.addEventListener('click', (e) => {
+      const item = (e.target as HTMLElement).closest<HTMLElement>('[data-chapter]');
+      if (item?.dataset.chapter !== undefined) void this.loadChapter(parseInt(item.dataset.chapter));
+    });
+
+    document.getElementById('source-content')?.addEventListener('click', (e) => {
+      const span = (e.target as HTMLElement).closest<HTMLElement>('[data-entity-id]');
+      if (span?.dataset.entityId) this.selectEntity(span.dataset.entityId);
+    });
+
+    document.querySelectorAll('.filter-btn').forEach((btn) => {
       btn.addEventListener('click', () => {
-        buttons.forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.filter-btn').forEach((b) => b.classList.remove('active'));
         btn.classList.add('active');
-        const button = btn as HTMLElement;
-        this.filterType = (button.dataset.type || 'all') as EntityType | 'all';
+        this.filterType = ((btn as HTMLElement).dataset.type ?? 'all') as EntityType | 'all';
         this.renderEntityList();
       });
     });
+
+    document.getElementById('entity-search')?.addEventListener('input', (e) => {
+      this.searchQuery = (e.target as HTMLInputElement).value.trim();
+      this.renderEntityList();
+    });
   }
 
-  selectEntity(entityId: string) {
+  private selectEntity(entityId: string) {
     this.selectedEntity = this.selectedEntity === entityId ? null : entityId;
     this.renderEntityList();
     this.renderSourceText();
+    this.renderEntityDetail();
+  }
+
+  private renderEntityDetail() {
+    const panel = document.getElementById('entity-detail');
+    if (!panel) return;
+
+    if (!this.selectedEntity) {
+      panel.innerHTML = '<div class="detail-empty">Select an entity to see details</div>';
+      return;
+    }
+
+    const entity = this.entityMap.get(this.selectedEntity);
+    if (!entity) return;
+
+    const color = this.ENTITY_COLORS[entity.type] ?? '#888';
+    const mentions = this.currentPages.flatMap((p) =>
+      p.tags.filter((t) => t.entity_id === this.selectedEntity),
+    ).length;
+
+    panel.innerHTML = `
+      <div class="detail-type" style="color:${color}">${entity.type}</div>
+      <h3 class="detail-name">${entity.primary_name}</h3>
+      ${entity.aliases.length ? `<div class="detail-aliases">Also: ${entity.aliases.join(', ')}</div>` : ''}
+      ${entity.born ? `<div class="detail-meta">Born: ${entity.born}</div>` : ''}
+      ${entity.died ? `<div class="detail-meta">Died: ${entity.died}</div>` : ''}
+      <p class="detail-desc">${entity.description}</p>
+      ${mentions > 0 ? `<div class="detail-mentions">${mentions} mention${mentions !== 1 ? 's' : ''} in chapter</div>` : ''}
+    `;
   }
 
   private showError(message: string) {
-    document.getElementById('app')!.innerHTML = `
-      <div style="padding: 3rem; text-align: center; color: var(--accent);">
-        <h2>Error</h2>
-        <p>${message}</p>
-      </div>
-    `;
+    const app = document.getElementById('app');
+    if (app)
+      app.innerHTML = `<div style="padding:3rem;text-align:center;color:#c45c3e"><h2>Error</h2><p>${message}</p></div>`;
   }
 }
 
-// Initialize app
 const app = new UndauntedApp();
-app.init();
-
-// Make app globally accessible for onclick handlers
-(window as any).app = app;
+void app.init();
+(window as unknown as Record<string, unknown>).app = app;
