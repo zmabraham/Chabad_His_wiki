@@ -60,6 +60,26 @@
   .book-item.active { background: var(--gold); color: var(--dark); font-weight: bold; }
   .book-item .meta { font-size: 10px; color: #807050; }
   .book-item.active .meta { color: #5a3c00; }
+  /* Multi-volume book header */
+  .vol-group-header {
+    padding: 8px 12px 8px 20px; cursor: pointer;
+    border-bottom: 1px solid #3a2008; font-size: 13px; color: var(--gold-light);
+    display: flex; justify-content: space-between; align-items: center;
+    background: #221508; user-select: none;
+  }
+  .vol-group-header:hover { background: #3a2410; }
+  .vol-group-header .arrow { font-size: 10px; color: #806040; transition: transform 0.2s; margin-left: 6px; }
+  .vol-group-header.open .arrow { transform: rotate(90deg); }
+  .vol-list { display: none; }
+  .vol-list.open { display: block; }
+  .vol-item {
+    padding: 6px 12px 6px 32px; cursor: pointer;
+    border-bottom: 1px solid #2a1808; font-size: 12px; color: #c0a070;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .vol-item:hover { background: #3a2410; color: var(--gold-light); }
+  .vol-item.active { background: var(--gold); color: var(--dark); font-weight: bold; }
+  .vol-item .meta { font-size: 10px; color: #706040; }
 
   /* Main content */
   #main { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
@@ -158,8 +178,9 @@ function renderSidebar(filter = '') {
   const fl = filter.toLowerCase();
 
   booksData.categories.forEach((cat, ci) => {
-    const books = booksData.books.filter(b => b.cat === ci &&
-      (!fl || b.title.includes(filter) || b.id.includes(fl) || cat.heb.includes(filter) || cat.eng.toLowerCase().includes(fl)));
+    const allBooks = booksData.books.filter(b => b.cat === ci);
+    const books = allBooks.filter(b =>
+      (!fl || b.title.toLowerCase().includes(fl) || cat.heb.includes(filter) || cat.eng.toLowerCase().includes(fl)));
     if (!books.length && fl) return;
 
     const catDiv = document.createElement('div');
@@ -167,22 +188,62 @@ function renderSidebar(filter = '') {
     const header = document.createElement('div');
     header.className = 'cat-header' + (fl ? ' open' : '');
     header.innerHTML = `<span>${cat.heb}</span><span class="eng">${cat.eng}</span><span class="arrow">▶</span>`;
+    const bookList = document.createElement('div');
+    bookList.className = 'book-list' + (fl ? ' open' : '');
     header.onclick = () => {
       header.classList.toggle('open');
       bookList.classList.toggle('open');
     };
 
-    const bookList = document.createElement('div');
-    bookList.className = 'book-list' + (fl ? ' open' : '');
+    // Group volumes under parent books
+    // A volume entry has book.parent set; a standalone book does not
+    const groups = {}; // parentId -> [volumes]
+    const standalones = [];
+    books.forEach(b => {
+      if (b.parent) {
+        if (!groups[b.parent]) groups[b.parent] = { info: null, vols: [] };
+        groups[b.parent].vols.push(b);
+      } else {
+        standalones.push(b);
+      }
+    });
 
-    books.forEach(book => {
-      const item = document.createElement('div');
-      item.className = 'book-item' + (currentBook === book.id ? ' active' : '');
-      const sizeKB = Math.round(book.size / 1024);
-      const sizeStr = sizeKB > 1024 ? `${(sizeKB/1024).toFixed(1)}MB` : `${sizeKB}KB`;
-      item.innerHTML = `<span>${book.title}</span><span class="meta">${book.pages}p · ${sizeStr}</span>`;
-      item.onclick = () => loadBook(book);
-      bookList.appendChild(item);
+    standalones.forEach(book => {
+      if (groups[book.id]) {
+        // This book has volumes — render as expandable group
+        const vols = groups[book.id].vols;
+        const hasActive = vols.some(v => v.id === currentBook);
+        const grpHeader = document.createElement('div');
+        grpHeader.className = 'vol-group-header' + (hasActive || fl ? ' open' : '');
+        grpHeader.innerHTML = `<span>${book.title.split(' — ')[0]}</span><span class="arrow">▶</span>`;
+        const volList = document.createElement('div');
+        volList.className = 'vol-list' + (hasActive || fl ? ' open' : '');
+        grpHeader.onclick = () => {
+          grpHeader.classList.toggle('open');
+          volList.classList.toggle('open');
+        };
+        vols.forEach(vol => {
+          const volLabel = vol.title.split(' — ').slice(1).join(' — ') || vol.title;
+          const item = document.createElement('div');
+          item.className = 'vol-item' + (currentBook === vol.id ? ' active' : '');
+          const sizeKB = Math.round(vol.size / 1024);
+          const sizeStr = sizeKB > 1024 ? `${(sizeKB/1024).toFixed(1)}MB` : `${sizeKB}KB`;
+          item.innerHTML = `<span>${volLabel}</span><span class="meta">${vol.pages}p</span>`;
+          item.onclick = () => loadBook(vol);
+          volList.appendChild(item);
+        });
+        bookList.appendChild(grpHeader);
+        bookList.appendChild(volList);
+      } else {
+        // Standalone book
+        const item = document.createElement('div');
+        item.className = 'book-item' + (currentBook === book.id ? ' active' : '');
+        const sizeKB = Math.round(book.size / 1024);
+        const sizeStr = sizeKB > 1024 ? `${(sizeKB/1024).toFixed(1)}MB` : `${sizeKB}KB`;
+        item.innerHTML = `<span>${book.title}</span><span class="meta">${book.pages}p · ${sizeStr}</span>`;
+        item.onclick = () => loadBook(book);
+        bookList.appendChild(item);
+      }
     });
 
     catDiv.appendChild(header);

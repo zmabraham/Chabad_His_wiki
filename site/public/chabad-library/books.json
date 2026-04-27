@@ -1,471 +1,35 @@
 {
-  "books": [
-    {
-      "id": "אגרות_קודש_צצ_—_Igros_Kodesh_Tzemach_Tzedek",
-      "title": "אגרות_קודש_צ״צ — Igros Kodesh (Tzemach Tzedek)",
-      "pages": 1,
-      "size": 430,
-      "cat": 4
-    },
-    {
-      "id": "אגרות_קודש_רייצ_—_Igros_Kodesh_Frierdiker_Rebbe",
-      "title": "אגרות_קודש_ריי״צ — Igros Kodesh (Frierdiker Rebbe)",
-      "pages": 1,
-      "size": 1387,
-      "cat": 7
-    },
-    {
-      "id": "אגרות_קודש_—_Igros_Kodesh_The_Rebbe",
-      "title": "אגרות_קודש — Igros Kodesh (The Rebbe)",
-      "pages": 10575,
-      "size": 26048354,
-      "cat": 8
-    },
-    {
-      "id": "אדמור_הצצ_ותנועת_ההשכלה",
-      "title": "אדמו״ר_הצ״צ_ותנועת_ההשכלה",
-      "pages": 1,
-      "size": 1181,
-      "cat": 7
-    },
-    {
-      "id": "אדמורי_חבד_ויהדות_אוסטריה",
-      "title": "אדמו״רי_חב״ד_ויהדות_אוסטריה",
-      "pages": 1,
-      "size": 1231,
-      "cat": 10
-    },
-    {
-      "id": "אדמורי_חבד_ויהדות_בוכרה",
-      "title": "אדמו״רי_חב״ד_ויהדות_בוכרה",
-      "pages": 1,
-      "size": 1332,
-      "cat": 10
-    },
-    {
-      "id": "אדמורי_חבד_ויהדות_גרמניה",
-      "title": "אדמו״רי_חב״ד_ויהדות_גרמניה",
-      "pages": 1,
-      "size": 1605,
-      "cat": 10
-    },
-    {
-      "id": "אוצר_מנהגי_חבד_—_Otzar_Minhagei_Chabad",
-      "title": "אוצר_מנהגי_חב״ד — Otzar Minhagei Chabad",
-      "pages": 4,
-      "size": 2233,
-      "cat": 9
-    },
-    {
-      "id": "אור_התורה_—_Or_HaTorah_Tzemach_Tzedek",
-      "title": "אור_התורה — Or HaTorah (Tzemach Tzedek)",
-      "pages": 3,
-      "size": 1280,
-      "cat": 4
-    },
-    {
-      "id": "אור_תורה_—_Or_Torah_Maggid",
-      "title": "אור_תורה — Or Torah (Maggid)",
-      "pages": 83,
-      "size": 354369,
-      "cat": 1
-    },
-    {
-      "id": "אמרי_בינה_—_Imrei_Binah",
-      "title": "אמרי_בינה — Imrei Binah",
-      "pages": 57,
-      "size": 282561,
-      "cat": 3
-    },
-    {
-      "id": "ביאורי_תניא_—_Biurei_Tanya",
-      "title": "ביאורי_תניא — Biurei Tanya",
-      "pages": 52,
-      "size": 944011,
-      "cat": 9
-    },
-    {
-      "id": "בכל_ביתי_נאמן_הוא",
-      "title": "בכל_ביתי_נאמן_הוא",
-      "pages": 1,
-      "size": 1490,
-      "cat": 10
-    },
-    {
-      "id": "דובר_שלום_—_Dover_Shalom",
-      "title": "דובר_שלום — Dover Shalom",
-      "pages": 10,
-      "size": 72700,
-      "cat": 9
-    },
-    {
-      "id": "דרך_מצותיך_—_Derech_Mitzvosecha",
-      "title": "דרך_מצותיך — Derech Mitzvosecha",
-      "pages": 3,
-      "size": 4601,
-      "cat": 4
-    },
-    {
-      "id": "היום_יום_—_HaYom_Yom",
-      "title": "היום_יום — HaYom Yom",
-      "pages": 38,
-      "size": 28099,
-      "cat": 8
-    },
-    {
-      "id": "הלכות_אמירה_לנכרי",
-      "title": "הלכות_אמירה_לנכרי",
-      "pages": 14,
-      "size": 7861,
-      "cat": 9
-    },
-    {
-      "id": "זכרון_לבני_ישראל",
-      "title": "זכרון_לבני_ישראל",
-      "pages": 4,
-      "size": 41546,
-      "cat": 10
-    },
-    {
-      "id": "זכרונותי",
-      "title": "זכרונותי",
-      "pages": 8,
-      "size": 74483,
-      "cat": 10
-    },
-    {
-      "id": "יומן_השליחות_המיוחדת",
-      "title": "יומן_השליחות_המיוחדת",
-      "pages": 8,
-      "size": 66916,
-      "cat": 10
-    },
-    {
-      "id": "כתר_שם_טוב_—_Keser_Shem_Tov",
-      "title": "כתר_שם_טוב — Keser Shem Tov",
-      "pages": 3,
-      "size": 4507,
-      "cat": 0
-    },
-    {
-      "id": "ליובאוויטש",
-      "title": "ליובאוויטש",
-      "pages": 1,
-      "size": 840,
-      "cat": 10
-    },
-    {
-      "id": "למען_ידעו_בנים",
-      "title": "למען_ידעו_בנים",
-      "pages": 11,
-      "size": 46202,
-      "cat": 10
-    },
-    {
-      "id": "לקוטי_טעמים_ומנהגים_להגדה",
-      "title": "לקוטי_טעמים_ומנהגים_להגדה",
-      "pages": 1,
-      "size": 928,
-      "cat": 8
-    },
-    {
-      "id": "לקוטי_טעמים_ומנהגים_להגדה_עם_ביאור_דברי_שלום",
-      "title": "לקוטי_טעמים_ומנהגים_להגדה_עם_ביאור_דברי_שלום",
-      "pages": 3,
-      "size": 11099,
-      "cat": 8
-    },
-    {
-      "id": "לקוטי_שיחות_—_Likkutei_Sichos",
-      "title": "לקוטי_שיחות — Likkutei Sichos",
-      "pages": 53,
-      "size": 258329,
-      "cat": 8
-    },
-    {
-      "id": "מאמרי_אדהז_—_Maamarei_Admur_HaZaken",
-      "title": "מאמרי_אדה״ז — Maamarei Admur HaZaken",
-      "pages": 52,
-      "size": 118016,
-      "cat": 2
-    },
-    {
-      "id": "מאמרים_מלוקטים_—_Maamarim_Melukatim",
-      "title": "מאמרים_מלוקטים — Maamarim Melukatim",
-      "pages": 58,
-      "size": 148065,
-      "cat": 8
-    },
-    {
-      "id": "מאסר_וגאולת_אדמור_האמצעי",
-      "title": "מאסר_וגאולת_אדמו״ר_האמצעי",
-      "pages": 1,
-      "size": 769,
-      "cat": 10
-    },
-    {
-      "id": "מבית_הגנזים",
-      "title": "מבית_הגנזים",
-      "pages": 1,
-      "size": 964,
-      "cat": 10
-    },
-    {
-      "id": "משולחן_הארי_—_MiShulchan_HaAri",
-      "title": "משולחן_הארי — MiShulchan HaAri",
-      "pages": 15,
-      "size": 41179,
-      "cat": 9
-    },
-    {
-      "id": "נר_מצוה_ותורה_אור_—_Ner_Mitzva_VTorah_Ohr",
-      "title": "נר_מצוה_ותורה_אור — Ner Mitzva VTorah Ohr",
-      "pages": 5,
-      "size": 21092,
-      "cat": 3
-    },
-    {
-      "id": "סדר_מכירת_חמץ",
-      "title": "סדר_מכירת_חמץ",
-      "pages": 2,
-      "size": 1591,
-      "cat": 9
-    },
-    {
-      "id": "סדר_תנאים_אירוסין_ונישואין",
-      "title": "סדר_תנאים_אירוסין_ונישואין",
-      "pages": 2,
-      "size": 12429,
-      "cat": 9
-    },
-    {
-      "id": "ספר_המאמרים_רייצ_—_Sefer_HaMaamarim_Frierdiker_Rebbe",
-      "title": "ספר_המאמרים_ריי״צ — Sefer HaMaamarim (Frierdiker Rebbe)",
-      "pages": 1,
-      "size": 1298,
-      "cat": 7
-    },
-    {
-      "id": "עבודת_הקודש",
-      "title": "עבודת_הקודש",
-      "pages": 1,
-      "size": 1285,
-      "cat": 10
-    },
-    {
-      "id": "ענינה_של_תורת_החסידות",
-      "title": "ענינה_של_תורת_החסידות",
-      "pages": 4,
-      "size": 9658,
-      "cat": 8
-    },
-    {
-      "id": "פירוש_המילות_—_Biur_HaMilos",
-      "title": "פירוש_המילות — Biur HaMilos",
-      "pages": 76,
-      "size": 158419,
-      "cat": 3
-    },
-    {
-      "id": "פלח_הרמון_—_Pelach_HaRimon",
-      "title": "פלח_הרמון — Pelach HaRimon",
-      "pages": 3,
-      "size": 1135,
-      "cat": 9
-    },
-    {
-      "id": "פסקי_אדמור_הזקן_באיסור_והיתר",
-      "title": "פסקי_אדמו״ר_הזקן_באיסור_והיתר",
-      "pages": 4,
-      "size": 5024,
-      "cat": 9
-    },
-    {
-      "id": "פסקי_הסידור_—_Piskei_HaSiddur",
-      "title": "פסקי_הסידור — Piskei HaSiddur",
-      "pages": 53,
-      "size": 126297,
-      "cat": 2
-    },
-    {
-      "id": "קונטרס_ומעין_—_Kuntres_UMaayan",
-      "title": "קונטרס_ומעין — Kuntres UMaayan",
-      "pages": 10,
-      "size": 82629,
-      "cat": 6
-    },
-    {
-      "id": "רשימות_—_Reshimos",
-      "title": "רשימות — Reshimos",
-      "pages": 1,
-      "size": 538,
-      "cat": 8
-    },
-    {
-      "id": "שארית_יהודה_—_Shaarit_Yehuda",
-      "title": "שארית_יהודה — Shaarit Yehuda",
-      "pages": 4,
-      "size": 4440,
-      "cat": 9
-    },
-    {
-      "id": "שולחן_ערוך_אדהז_—_Shulchan_Aruch",
-      "title": "שולחן_ערוך_אדה״ז — Shulchan Aruch",
-      "pages": 4,
-      "size": 3666,
-      "cat": 2
-    },
-    {
-      "id": "שוער_עם_ביאור_דברי_שלום_—_Shulchan_Aruch_with_Divrei_Shalom",
-      "title": "שוע״ר_עם_ביאור_דברי_שלום — Shulchan Aruch with Divrei Shalom",
-      "pages": 138,
-      "size": 7317027,
-      "cat": 2
-    },
-    {
-      "id": "שות_אדהז_—_Shut_Admur_HaZaken",
-      "title": "שו״ת_אדה״ז — Shut Admur HaZaken",
-      "pages": 8,
-      "size": 43550,
-      "cat": 2
-    },
-    {
-      "id": "שות_תורת_שלום_—_Shut_Toras_Shalom",
-      "title": "שו״ת_תורת_שלום — Shut Toras Shalom",
-      "pages": 4,
-      "size": 5763,
-      "cat": 6
-    },
-    {
-      "id": "שיעורי_הלכה_למעשה",
-      "title": "שיעורי_הלכה_למעשה",
-      "pages": 4,
-      "size": 378764,
-      "cat": 9
-    },
-    {
-      "id": "שערי_אורה_—_Shaarei_Orah",
-      "title": "שערי_אורה — Shaarei Orah",
-      "pages": 89,
-      "size": 271589,
-      "cat": 3
-    },
-    {
-      "id": "שערי_תשובה_—_Shaarei_Teshuva",
-      "title": "שערי_תשובה — Shaarei Teshuva",
-      "pages": 21,
-      "size": 57279,
-      "cat": 3
-    },
-    {
-      "id": "תולדות_אברהם_חיים",
-      "title": "תולדות_אברהם_חיים",
-      "pages": 15,
-      "size": 83013,
-      "cat": 10
-    },
-    {
-      "id": "תולדות_חבד_בארץ_הקודש",
-      "title": "תולדות_חב״ד_בארץ_הקודש",
-      "pages": 26,
-      "size": 130693,
-      "cat": 10
-    },
-    {
-      "id": "תולדות_חבד_בפולין_ליטא_ולטביא",
-      "title": "תולדות_חב״ד_בפולין_ליטא_ולטביא",
-      "pages": 11,
-      "size": 181884,
-      "cat": 10
-    },
-    {
-      "id": "תולדות_חבד_ברוסיה",
-      "title": "תולדות_חב״ד_ברוסיה",
-      "pages": 9,
-      "size": 8416,
-      "cat": 10
-    },
-    {
-      "id": "תורה_אור_—_Torah_Ohr",
-      "title": "תורה_אור — Torah Ohr",
-      "pages": 52,
-      "size": 228881,
-      "cat": 2
-    },
-    {
-      "id": "תורת_חיים_—_Toras_Chaim",
-      "title": "תורת_חיים — Toras Chaim",
-      "pages": 3,
-      "size": 1190,
-      "cat": 3
-    },
-    {
-      "id": "תורת_מנחם_—_Toras_Menachem",
-      "title": "תורת_מנחם — Toras Menachem",
-      "pages": 1606,
-      "size": 5865236,
-      "cat": 8
-    },
-    {
-      "id": "תורת_שמואל_—_Toras_Shmuel",
-      "title": "תורת_שמואל — Toras Shmuel",
-      "pages": 53,
-      "size": 90310,
-      "cat": 5
-    },
-    {
-      "id": "תיקוני_מקוואות",
-      "title": "תיקוני_מקוואות",
-      "pages": 1,
-      "size": 1183,
-      "cat": 9
-    },
-    {
-      "id": "תניא_—_Tanya",
-      "title": "תניא — Tanya",
-      "pages": 1,
-      "size": 383,
-      "cat": 2
-    },
-    {
-      "id": "תערוכות_הספריה",
-      "title": "תערוכות_הספריה",
-      "pages": 2,
-      "size": 36774,
-      "cat": 10
-    }
-  ],
   "categories": [
     {
       "heb": "ספרי הבעל שם טוב",
       "eng": "Baal Shem Tov"
     },
     {
-      "heb": "ספרי הרב המגיד ממעזריטש",
+      "heb": "ספרי הרב המגיד",
       "eng": "The Maggid"
     },
     {
-      "heb": "ספרי כ\"ק אדמו\"ר הזקן",
+      "heb": "ספרי אדמו״ר הזקן",
       "eng": "Alter Rebbe"
     },
     {
-      "heb": "ספרי כ\"ק אדמו\"ר האמצעי",
+      "heb": "ספרי אדמו״ר האמצעי",
       "eng": "Mitteler Rebbe"
     },
     {
-      "heb": "ספרי כ\"ק אדמו\"ר ה\"צמח צדק\"",
+      "heb": "ספרי צמח צדק",
       "eng": "Tzemach Tzedek"
     },
     {
-      "heb": "ספרי כ\"ק אדמו\"ר מהר\"ש",
+      "heb": "ספרי מהר\"ש",
       "eng": "Maharash"
     },
     {
-      "heb": "ספרי כ\"ק אדמו\"ר מוהרש\"ב",
+      "heb": "ספרי מוהרש\"ב",
       "eng": "Rashab"
     },
     {
-      "heb": "ספרי כ\"ק אדמו\"ר מוהריי\"צ",
+      "heb": "ספרי מוהריי\"צ",
       "eng": "Frierdiker Rebbe"
     },
     {
@@ -479,6 +43,799 @@
     {
       "heb": "מסביב לחסידות",
       "eng": "Around Chassidus"
+    }
+  ],
+  "books": [
+    {
+      "id": "כתר_שם_טוב__Keser_Shem_Tov",
+      "title": "כתר שם טוב — Keser Shem Tov",
+      "pages": 1,
+      "size": 2230,
+      "cat": 0
+    },
+    {
+      "id": "אור_תורה__Or_Torah_Maggid",
+      "title": "אור תורה — Or Torah (Maggid)",
+      "pages": 77,
+      "size": 347756,
+      "cat": 1
+    },
+    {
+      "id": "מאמרי_אדה״ז__Maamarei_Admur_HaZaken",
+      "title": "מאמרי אדה״ז — Maamarei Admur HaZaken",
+      "pages": 47,
+      "size": 113030,
+      "cat": 2
+    },
+    {
+      "id": "פסקי_הסידור__Piskei_HaSiddur",
+      "title": "פסקי הסידור — Piskei HaSiddur",
+      "pages": 51,
+      "size": 123382,
+      "cat": 2
+    },
+    {
+      "id": "שו״ת_אדה״ז__Shut_Admur_HaZaken",
+      "title": "שו״ת אדה״ז — Shut Admur HaZaken",
+      "pages": 7,
+      "size": 40645,
+      "cat": 2
+    },
+    {
+      "id": "תורה_אור__Torah_Ohr",
+      "title": "תורה אור — Torah Ohr",
+      "pages": 51,
+      "size": 227738,
+      "cat": 2
+    },
+    {
+      "id": "אמרי_בינה__Imrei_Binah",
+      "title": "אמרי בינה — Imrei Binah",
+      "pages": 56,
+      "size": 281030,
+      "cat": 3
+    },
+    {
+      "id": "נר_מצוה_ותורה_אור__Ner_Mitzva_VTorah_Ohr",
+      "title": "נר מצוה ותורה אור — Ner Mitzva VTorah Ohr",
+      "pages": 3,
+      "size": 13995,
+      "cat": 3
+    },
+    {
+      "id": "פירוש_המילות__Biur_HaMilos",
+      "title": "פירוש המילות — Biur HaMilos",
+      "pages": 71,
+      "size": 152095,
+      "cat": 3
+    },
+    {
+      "id": "שערי_אורה__Shaarei_Orah",
+      "title": "שערי אורה — Shaarei Orah",
+      "pages": 88,
+      "size": 269138,
+      "cat": 3
+    },
+    {
+      "id": "שערי_תשובה__Shaarei_Teshuva",
+      "title": "שערי תשובה — Shaarei Teshuva",
+      "pages": 13,
+      "size": 42161,
+      "cat": 3
+    },
+    {
+      "id": "תורת_שמואל__Toras_Shmuel",
+      "title": "תורת שמואל — Toras Shmuel",
+      "pages": 50,
+      "size": 83271,
+      "cat": 5
+    },
+    {
+      "id": "קונטרס_ומעין__Kuntres_UMaayan",
+      "title": "קונטרס ומעין — Kuntres UMaayan",
+      "pages": 9,
+      "size": 81340,
+      "cat": 6
+    },
+    {
+      "id": "שו״ת_תורת_שלום__Shut_Toras_Shalom",
+      "title": "שו״ת תורת שלום — Shut Toras Shalom",
+      "pages": 4,
+      "size": 5674,
+      "cat": 6
+    },
+    {
+      "id": "אגרות_קודש_ריי״צ__Igros_Kodesh_Frierdiker_Rebbe",
+      "title": "אגרות קודש ריי״צ — Igros Kodesh (Frierdiker Rebbe)",
+      "pages": 1,
+      "size": 1283,
+      "cat": 7
+    },
+    {
+      "id": "אגרות_קודש__Igros_Kodesh_The_Rebbe",
+      "title": "אגרות קודש — Igros Kodesh (The Rebbe)",
+      "pages": 0,
+      "size": 0,
+      "cat": 8,
+      "is_group": true
+    },
+    {
+      "id": "אגרות_קודש__Igros_Kodesh_The_Rebbe__כרך_א",
+      "title": "אגרות קודש — Igros Kodesh (The Rebbe) — כרך א",
+      "pages": 169,
+      "size": 814065,
+      "cat": 8,
+      "parent": "אגרות_קודש__Igros_Kodesh_The_Rebbe"
+    },
+    {
+      "id": "אגרות_קודש__Igros_Kodesh_The_Rebbe__כרך_ב",
+      "title": "אגרות קודש — Igros Kodesh (The Rebbe) — כרך ב",
+      "pages": 240,
+      "size": 941158,
+      "cat": 8,
+      "parent": "אגרות_קודש__Igros_Kodesh_The_Rebbe"
+    },
+    {
+      "id": "אגרות_קודש__Igros_Kodesh_The_Rebbe__כרך_ג",
+      "title": "אגרות קודש — Igros Kodesh (The Rebbe) — כרך ג",
+      "pages": 371,
+      "size": 1099510,
+      "cat": 8,
+      "parent": "אגרות_קודש__Igros_Kodesh_The_Rebbe"
+    },
+    {
+      "id": "אגרות_קודש__Igros_Kodesh_The_Rebbe__כרך_ד",
+      "title": "אגרות קודש — Igros Kodesh (The Rebbe) — כרך ד",
+      "pages": 459,
+      "size": 1176833,
+      "cat": 8,
+      "parent": "אגרות_קודש__Igros_Kodesh_The_Rebbe"
+    },
+    {
+      "id": "אגרות_קודש__Igros_Kodesh_The_Rebbe__כרך_ה",
+      "title": "אגרות קודש — Igros Kodesh (The Rebbe) — כרך ה",
+      "pages": 1,
+      "size": 2282,
+      "cat": 8,
+      "parent": "אגרות_קודש__Igros_Kodesh_The_Rebbe"
+    },
+    {
+      "id": "אגרות_קודש__Igros_Kodesh_The_Rebbe__כרך_ו",
+      "title": "אגרות קודש — Igros Kodesh (The Rebbe) — כרך ו",
+      "pages": 339,
+      "size": 873921,
+      "cat": 8,
+      "parent": "אגרות_קודש__Igros_Kodesh_The_Rebbe"
+    },
+    {
+      "id": "אגרות_קודש__Igros_Kodesh_The_Rebbe__כרך_ז",
+      "title": "אגרות קודש — Igros Kodesh (The Rebbe) — כרך ז",
+      "pages": 386,
+      "size": 935239,
+      "cat": 8,
+      "parent": "אגרות_קודש__Igros_Kodesh_The_Rebbe"
+    },
+    {
+      "id": "אגרות_קודש__Igros_Kodesh_The_Rebbe__כרך_ח",
+      "title": "אגרות קודש — Igros Kodesh (The Rebbe) — כרך ח",
+      "pages": 377,
+      "size": 859017,
+      "cat": 8,
+      "parent": "אגרות_קודש__Igros_Kodesh_The_Rebbe"
+    },
+    {
+      "id": "אגרות_קודש__Igros_Kodesh_The_Rebbe__כרך_ט",
+      "title": "אגרות קודש — Igros Kodesh (The Rebbe) — כרך ט",
+      "pages": 349,
+      "size": 789282,
+      "cat": 8,
+      "parent": "אגרות_קודש__Igros_Kodesh_The_Rebbe"
+    },
+    {
+      "id": "אגרות_קודש__Igros_Kodesh_The_Rebbe__כרך_טו",
+      "title": "אגרות קודש — Igros Kodesh (The Rebbe) — כרך טו",
+      "pages": 453,
+      "size": 1100397,
+      "cat": 8,
+      "parent": "אגרות_קודש__Igros_Kodesh_The_Rebbe"
+    },
+    {
+      "id": "אגרות_קודש__Igros_Kodesh_The_Rebbe__כרך_טז",
+      "title": "אגרות קודש — Igros Kodesh (The Rebbe) — כרך טז",
+      "pages": 374,
+      "size": 868769,
+      "cat": 8,
+      "parent": "אגרות_קודש__Igros_Kodesh_The_Rebbe"
+    },
+    {
+      "id": "אגרות_קודש__Igros_Kodesh_The_Rebbe__כרך_י",
+      "title": "אגרות קודש — Igros Kodesh (The Rebbe) — כרך י",
+      "pages": 417,
+      "size": 988688,
+      "cat": 8,
+      "parent": "אגרות_קודש__Igros_Kodesh_The_Rebbe"
+    },
+    {
+      "id": "אגרות_קודש__Igros_Kodesh_The_Rebbe__כרך_יא",
+      "title": "אגרות קודש — Igros Kodesh (The Rebbe) — כרך יא",
+      "pages": 429,
+      "size": 1029087,
+      "cat": 8,
+      "parent": "אגרות_קודש__Igros_Kodesh_The_Rebbe"
+    },
+    {
+      "id": "אגרות_קודש__Igros_Kodesh_The_Rebbe__כרך_יב",
+      "title": "אגרות קודש — Igros Kodesh (The Rebbe) — כרך יב",
+      "pages": 476,
+      "size": 1070363,
+      "cat": 8,
+      "parent": "אגרות_קודש__Igros_Kodesh_The_Rebbe"
+    },
+    {
+      "id": "אגרות_קודש__Igros_Kodesh_The_Rebbe__כרך_יג",
+      "title": "אגרות קודש — Igros Kodesh (The Rebbe) — כרך יג",
+      "pages": 476,
+      "size": 1200670,
+      "cat": 8,
+      "parent": "אגרות_קודש__Igros_Kodesh_The_Rebbe"
+    },
+    {
+      "id": "אגרות_קודש__Igros_Kodesh_The_Rebbe__כרך_יד",
+      "title": "אגרות קודש — Igros Kodesh (The Rebbe) — כרך יד",
+      "pages": 582,
+      "size": 1241180,
+      "cat": 8,
+      "parent": "אגרות_קודש__Igros_Kodesh_The_Rebbe"
+    },
+    {
+      "id": "אגרות_קודש__Igros_Kodesh_The_Rebbe__כרך_יז",
+      "title": "אגרות קודש — Igros Kodesh (The Rebbe) — כרך יז",
+      "pages": 360,
+      "size": 816579,
+      "cat": 8,
+      "parent": "אגרות_קודש__Igros_Kodesh_The_Rebbe"
+    },
+    {
+      "id": "אגרות_קודש__Igros_Kodesh_The_Rebbe__כרך_יח",
+      "title": "אגרות קודש — Igros Kodesh (The Rebbe) — כרך יח",
+      "pages": 532,
+      "size": 1275125,
+      "cat": 8,
+      "parent": "אגרות_קודש__Igros_Kodesh_The_Rebbe"
+    },
+    {
+      "id": "אגרות_קודש__Igros_Kodesh_The_Rebbe__כרך_יט",
+      "title": "אגרות קודש — Igros Kodesh (The Rebbe) — כרך יט",
+      "pages": 418,
+      "size": 987934,
+      "cat": 8,
+      "parent": "אגרות_קודש__Igros_Kodesh_The_Rebbe"
+    },
+    {
+      "id": "אגרות_קודש__Igros_Kodesh_The_Rebbe__כרך_כ",
+      "title": "אגרות קודש — Igros Kodesh (The Rebbe) — כרך כ",
+      "pages": 315,
+      "size": 750450,
+      "cat": 8,
+      "parent": "אגרות_קודש__Igros_Kodesh_The_Rebbe"
+    },
+    {
+      "id": "אגרות_קודש__Igros_Kodesh_The_Rebbe__כרך_כא",
+      "title": "אגרות קודש — Igros Kodesh (The Rebbe) — כרך כא",
+      "pages": 465,
+      "size": 931352,
+      "cat": 8,
+      "parent": "אגרות_קודש__Igros_Kodesh_The_Rebbe"
+    },
+    {
+      "id": "אגרות_קודש__Igros_Kodesh_The_Rebbe__כרך_כב",
+      "title": "אגרות קודש — Igros Kodesh (The Rebbe) — כרך כב",
+      "pages": 463,
+      "size": 1116858,
+      "cat": 8,
+      "parent": "אגרות_קודש__Igros_Kodesh_The_Rebbe"
+    },
+    {
+      "id": "אגרות_קודש__Igros_Kodesh_The_Rebbe__כרך_כג",
+      "title": "אגרות קודש — Igros Kodesh (The Rebbe) — כרך כג",
+      "pages": 360,
+      "size": 1035426,
+      "cat": 8,
+      "parent": "אגרות_קודש__Igros_Kodesh_The_Rebbe"
+    },
+    {
+      "id": "אגרות_קודש__Igros_Kodesh_The_Rebbe__כרך_כד",
+      "title": "אגרות קודש — Igros Kodesh (The Rebbe) — כרך כד",
+      "pages": 348,
+      "size": 906838,
+      "cat": 8,
+      "parent": "אגרות_קודש__Igros_Kodesh_The_Rebbe"
+    },
+    {
+      "id": "אגרות_קודש__Igros_Kodesh_The_Rebbe__כרך_כה",
+      "title": "אגרות קודש — Igros Kodesh (The Rebbe) — כרך כה",
+      "pages": 1,
+      "size": 2031,
+      "cat": 8,
+      "parent": "אגרות_קודש__Igros_Kodesh_The_Rebbe"
+    },
+    {
+      "id": "אגרות_קודש__Igros_Kodesh_The_Rebbe__כרך_כו",
+      "title": "אגרות קודש — Igros Kodesh (The Rebbe) — כרך כו",
+      "pages": 418,
+      "size": 1227235,
+      "cat": 8,
+      "parent": "אגרות_קודש__Igros_Kodesh_The_Rebbe"
+    },
+    {
+      "id": "אגרות_קודש__Igros_Kodesh_The_Rebbe__כרך_כז",
+      "title": "אגרות קודש — Igros Kodesh (The Rebbe) — כרך כז",
+      "pages": 564,
+      "size": 1103173,
+      "cat": 8,
+      "parent": "אגרות_קודש__Igros_Kodesh_The_Rebbe"
+    },
+    {
+      "id": "אגרות_קודש__Igros_Kodesh_The_Rebbe__כרך_כח",
+      "title": "אגרות קודש — Igros Kodesh (The Rebbe) — כרך כח",
+      "pages": 414,
+      "size": 642966,
+      "cat": 8,
+      "parent": "אגרות_קודש__Igros_Kodesh_The_Rebbe"
+    },
+    {
+      "id": "היום_יום__HaYom_Yom",
+      "title": "היום יום — HaYom Yom",
+      "pages": 34,
+      "size": 24418,
+      "cat": 8
+    },
+    {
+      "id": "לקוטי_טעמים_ומנהגים_להגדה_עם_ביאור_דברי_שלום",
+      "title": "לקוטי טעמים ומנהגים להגדה עם ביאור דברי שלום",
+      "pages": 2,
+      "size": 10118,
+      "cat": 8
+    },
+    {
+      "id": "לקוטי_שיחות__Likkutei_Sichos",
+      "title": "לקוטי שיחות — Likkutei Sichos",
+      "pages": 0,
+      "size": 0,
+      "cat": 8,
+      "is_group": true
+    },
+    {
+      "id": "לקוטי_שיחות__Likkutei_Sichos__כרך_לה",
+      "title": "לקוטי שיחות — Likkutei Sichos — כרך לה",
+      "pages": 4,
+      "size": 44506,
+      "cat": 8,
+      "parent": "לקוטי_שיחות__Likkutei_Sichos"
+    },
+    {
+      "id": "לקוטי_שיחות__Likkutei_Sichos__כרך_לו",
+      "title": "לקוטי שיחות — Likkutei Sichos — כרך לו",
+      "pages": 4,
+      "size": 45940,
+      "cat": 8,
+      "parent": "לקוטי_שיחות__Likkutei_Sichos"
+    },
+    {
+      "id": "לקוטי_שיחות__Likkutei_Sichos__כרך_לז",
+      "title": "לקוטי שיחות — Likkutei Sichos — כרך לז",
+      "pages": 4,
+      "size": 33809,
+      "cat": 8,
+      "parent": "לקוטי_שיחות__Likkutei_Sichos"
+    },
+    {
+      "id": "לקוטי_שיחות__Likkutei_Sichos__כרך_לח",
+      "title": "לקוטי שיחות — Likkutei Sichos — כרך לח",
+      "pages": 5,
+      "size": 38059,
+      "cat": 8,
+      "parent": "לקוטי_שיחות__Likkutei_Sichos"
+    },
+    {
+      "id": "לקוטי_שיחות__Likkutei_Sichos__כרך_לט",
+      "title": "לקוטי שיחות — Likkutei Sichos — כרך לט",
+      "pages": 5,
+      "size": 76920,
+      "cat": 8,
+      "parent": "לקוטי_שיחות__Likkutei_Sichos"
+    },
+    {
+      "id": "מאמרים_מלוקטים__Maamarim_Melukatim",
+      "title": "מאמרים מלוקטים — Maamarim Melukatim",
+      "pages": 57,
+      "size": 143731,
+      "cat": 8
+    },
+    {
+      "id": "ענינה_של_תורת_החסידות",
+      "title": "ענינה של תורת החסידות",
+      "pages": 4,
+      "size": 9578,
+      "cat": 8
+    },
+    {
+      "id": "תורת_מנחם__Toras_Menachem",
+      "title": "תורת מנחם — Toras Menachem",
+      "pages": 0,
+      "size": 0,
+      "cat": 8,
+      "is_group": true
+    },
+    {
+      "id": "תורת_מנחם__Toras_Menachem___א__שנת_השית",
+      "title": "תורת מנחם — Toras Menachem — – א – שנת ה'שי\"ת",
+      "pages": 40,
+      "size": 75825,
+      "cat": 8,
+      "parent": "תורת_מנחם__Toras_Menachem"
+    },
+    {
+      "id": "תורת_מנחם__Toras_Menachem___ב__שנת_תשיא__חלק_ראשון",
+      "title": "תורת מנחם — Toras Menachem — – ב – שנת תשי\"א – חלק ראשון",
+      "pages": 56,
+      "size": 99404,
+      "cat": 8,
+      "parent": "תורת_מנחם__Toras_Menachem"
+    },
+    {
+      "id": "תורת_מנחם__Toras_Menachem___ג__שנת_תשיא__חלק_שני",
+      "title": "תורת מנחם — Toras Menachem — – ג – שנת תשי\"א – חלק שני",
+      "pages": 52,
+      "size": 94083,
+      "cat": 8,
+      "parent": "תורת_מנחם__Toras_Menachem"
+    },
+    {
+      "id": "תורת_מנחם__Toras_Menachem___ד__שנת_תשיב__חלק_ראשון",
+      "title": "תורת מנחם — Toras Menachem — – ד – שנת תשי\"ב – חלק ראשון",
+      "pages": 41,
+      "size": 79658,
+      "cat": 8,
+      "parent": "תורת_מנחם__Toras_Menachem"
+    },
+    {
+      "id": "תורת_מנחם__Toras_Menachem___ה__שנת_תשיב__חלק_שני",
+      "title": "תורת מנחם — Toras Menachem — – ה – שנת תשי\"ב – חלק שני",
+      "pages": 25,
+      "size": 51158,
+      "cat": 8,
+      "parent": "תורת_מנחם__Toras_Menachem"
+    },
+    {
+      "id": "תורת_מנחם__Toras_Menachem___ו__שנת_תשיב__חלק_שלישי",
+      "title": "תורת מנחם — Toras Menachem — – ו –  שנת תשי\"ב – חלק שלישי",
+      "pages": 23,
+      "size": 38749,
+      "cat": 8,
+      "parent": "תורת_מנחם__Toras_Menachem"
+    },
+    {
+      "id": "תורת_מנחם__Toras_Menachem___ז__שנת_תשיג__חלק_ראשון",
+      "title": "תורת מנחם — Toras Menachem — – ז – שנת תשי\"ג – חלק ראשון",
+      "pages": 37,
+      "size": 72356,
+      "cat": 8,
+      "parent": "תורת_מנחם__Toras_Menachem"
+    },
+    {
+      "id": "תורת_מנחם__Toras_Menachem___ח__שנת_תשיג__חלק_שני",
+      "title": "תורת מנחם — Toras Menachem — – ח – שנת תשי\"ג – חלק שני",
+      "pages": 27,
+      "size": 51999,
+      "cat": 8,
+      "parent": "תורת_מנחם__Toras_Menachem"
+    },
+    {
+      "id": "תורת_מנחם__Toras_Menachem___ט_שנת_תשיג__חלק_שלישי",
+      "title": "תורת מנחם — Toras Menachem — – ט –שנת תשי\"ג – חלק שלישי",
+      "pages": 24,
+      "size": 44540,
+      "cat": 8,
+      "parent": "תורת_מנחם__Toras_Menachem"
+    },
+    {
+      "id": "תורת_מנחם__Toras_Menachem___טו__שנת_תשטז__חלק_ראשון",
+      "title": "תורת מנחם — Toras Menachem — – טו – שנת תשט\"ז – חלק ראשון",
+      "pages": 30,
+      "size": 62308,
+      "cat": 8,
+      "parent": "תורת_מנחם__Toras_Menachem"
+    },
+    {
+      "id": "תורת_מנחם__Toras_Menachem___טז__שנת_תשטז__חלק_שני",
+      "title": "תורת מנחם — Toras Menachem — – טז – שנת תשט\"ז – חלק שני",
+      "pages": 31,
+      "size": 62831,
+      "cat": 8,
+      "parent": "תורת_מנחם__Toras_Menachem"
+    },
+    {
+      "id": "תורת_מנחם__Toras_Menachem___י__שנת_תשיד__חלק_ראשון",
+      "title": "תורת מנחם — Toras Menachem — – י – שנת תשי\"ד – חלק ראשון",
+      "pages": 34,
+      "size": 71417,
+      "cat": 8,
+      "parent": "תורת_מנחם__Toras_Menachem"
+    },
+    {
+      "id": "תורת_מנחם__Toras_Menachem___יא__שנת_תשיד__חלק_שני",
+      "title": "תורת מנחם — Toras Menachem — – יא – שנת תשי\"ד – חלק שני",
+      "pages": 26,
+      "size": 50439,
+      "cat": 8,
+      "parent": "תורת_מנחם__Toras_Menachem"
+    },
+    {
+      "id": "תורת_מנחם__Toras_Menachem___יב__שנת_תשיד__חלק_שלישי",
+      "title": "תורת מנחם — Toras Menachem — – יב – שנת תשי\"ד – חלק שלישי",
+      "pages": 24,
+      "size": 49320,
+      "cat": 8,
+      "parent": "תורת_מנחם__Toras_Menachem"
+    },
+    {
+      "id": "תורת_מנחם__Toras_Menachem___יג__שנת_תשטו__חלק_ראשון",
+      "title": "תורת מנחם — Toras Menachem — – יג – שנת תשט\"ו – חלק ראשון",
+      "pages": 35,
+      "size": 72325,
+      "cat": 8,
+      "parent": "תורת_מנחם__Toras_Menachem"
+    },
+    {
+      "id": "תורת_מנחם__Toras_Menachem___יד__שנת_תשטו__חלק_שני",
+      "title": "תורת מנחם — Toras Menachem — – יד – שנת תשט\"ו – חלק שני",
+      "pages": 1,
+      "size": 300,
+      "cat": 8,
+      "parent": "תורת_מנחם__Toras_Menachem"
+    },
+    {
+      "id": "תורת_מנחם__Toras_Menachem___יז__שנת_תשטז__חלק_שלישי",
+      "title": "תורת מנחם — Toras Menachem — – יז – שנת תשט\"ז – חלק שלישי",
+      "pages": 27,
+      "size": 52422,
+      "cat": 8,
+      "parent": "תורת_מנחם__Toras_Menachem"
+    },
+    {
+      "id": "תורת_מנחם__Toras_Menachem___יח__שנת_תשיז__חלק_ראשון",
+      "title": "תורת מנחם — Toras Menachem — – יח – שנת תשי\"ז – חלק ראשון",
+      "pages": 27,
+      "size": 57641,
+      "cat": 8,
+      "parent": "תורת_מנחם__Toras_Menachem"
+    },
+    {
+      "id": "תורת_מנחם__Toras_Menachem___כא__שנת_תשחי__חלק_ראשון",
+      "title": "תורת מנחם — Toras Menachem — – כא – שנת תשח\"י – חלק ראשון",
+      "pages": 30,
+      "size": 64454,
+      "cat": 8,
+      "parent": "תורת_מנחם__Toras_Menachem"
+    },
+    {
+      "id": "תורת_מנחם__Toras_Menachem___כג__שנת_תשחי__חלק_שלישי",
+      "title": "תורת מנחם — Toras Menachem — – כג – שנת תשח\"י – חלק שלישי",
+      "pages": 31,
+      "size": 62922,
+      "cat": 8,
+      "parent": "תורת_מנחם__Toras_Menachem"
+    },
+    {
+      "id": "תורת_מנחם__Toras_Menachem___כד__שנת_תשיט__חלק_ראשון",
+      "title": "תורת מנחם — Toras Menachem — – כד – שנת תשי\"ט – חלק ראשון",
+      "pages": 24,
+      "size": 53426,
+      "cat": 8,
+      "parent": "תורת_מנחם__Toras_Menachem"
+    },
+    {
+      "id": "תורת_מנחם__Toras_Menachem___כה__שנת_תשיט__חלק_שני",
+      "title": "תורת מנחם — Toras Menachem — – כה – שנת תשי\"ט – חלק שני",
+      "pages": 24,
+      "size": 50533,
+      "cat": 8,
+      "parent": "תורת_מנחם__Toras_Menachem"
+    },
+    {
+      "id": "תורת_מנחם__Toras_Menachem___כו__שנת_תשיט__חלק_שלישי",
+      "title": "תורת מנחם — Toras Menachem — – כו – שנת תשי\"ט – חלק שלישי",
+      "pages": 17,
+      "size": 31040,
+      "cat": 8,
+      "parent": "תורת_מנחם__Toras_Menachem"
+    },
+    {
+      "id": "תורת_מנחם__Toras_Menachem___כז__שנת_תשכ__חלק_ראשון",
+      "title": "תורת מנחם — Toras Menachem — – כז – שנת תש\"כ – חלק ראשון",
+      "pages": 30,
+      "size": 61402,
+      "cat": 8,
+      "parent": "תורת_מנחם__Toras_Menachem"
+    },
+    {
+      "id": "תורת_מנחם__Toras_Menachem___כח__שנת_תשכ__חלק_שני",
+      "title": "תורת מנחם — Toras Menachem — – כח – שנת תש\"כ – חלק שני",
+      "pages": 35,
+      "size": 67885,
+      "cat": 8,
+      "parent": "תורת_מנחם__Toras_Menachem"
+    },
+    {
+      "id": "תורת_מנחם__Toras_Menachem___כט__שנת_תשכא__חלק_ראשון",
+      "title": "תורת מנחם — Toras Menachem — – כט – שנת תשכ\"א – חלק ראשון",
+      "pages": 39,
+      "size": 82910,
+      "cat": 8,
+      "parent": "תורת_מנחם__Toras_Menachem"
+    },
+    {
+      "id": "תורת_מנחם__Toras_Menachem___ל__שנת_תשכא__חלק_שני",
+      "title": "תורת מנחם — Toras Menachem — – ל – שנת תשכ\"א – חלק שני",
+      "pages": 25,
+      "size": 52610,
+      "cat": 8,
+      "parent": "תורת_מנחם__Toras_Menachem"
+    },
+    {
+      "id": "ביאורי_תניא__Biurei_Tanya",
+      "title": "ביאורי תניא — Biurei Tanya",
+      "pages": 50,
+      "size": 936055,
+      "cat": 9
+    },
+    {
+      "id": "דובר_שלום__Dover_Shalom",
+      "title": "דובר שלום — Dover Shalom",
+      "pages": 9,
+      "size": 64457,
+      "cat": 9
+    },
+    {
+      "id": "משולחן_הארי__MiShulchan_HaAri",
+      "title": "משולחן הארי — MiShulchan HaAri",
+      "pages": 13,
+      "size": 38344,
+      "cat": 9
+    },
+    {
+      "id": "סדר_מכירת_חמץ",
+      "title": "סדר מכירת חמץ",
+      "pages": 1,
+      "size": 297,
+      "cat": 9
+    },
+    {
+      "id": "סדר_תנאים_אירוסין_ונישואין",
+      "title": "סדר תנאים אירוסין ונישואין",
+      "pages": 1,
+      "size": 11692,
+      "cat": 9
+    },
+    {
+      "id": "פסקי_אדמו״ר_הזקן_באיסור_והיתר",
+      "title": "פסקי אדמו״ר הזקן באיסור והיתר",
+      "pages": 2,
+      "size": 2942,
+      "cat": 9
+    },
+    {
+      "id": "שארית_יהודה__Shaarit_Yehuda",
+      "title": "שארית יהודה — Shaarit Yehuda",
+      "pages": 2,
+      "size": 818,
+      "cat": 9
+    },
+    {
+      "id": "שיעורי_הלכה_למעשה",
+      "title": "שיעורי הלכה למעשה",
+      "pages": 3,
+      "size": 375787,
+      "cat": 9
+    },
+    {
+      "id": "אדמו״רי_חב״ד_ויהדות_אוסטריה",
+      "title": "אדמו״רי חב״ד ויהדות אוסטריה",
+      "pages": 1,
+      "size": 1156,
+      "cat": 10
+    },
+    {
+      "id": "אדמו״רי_חב״ד_ויהדות_בוכרה",
+      "title": "אדמו״רי חב״ד ויהדות בוכרה",
+      "pages": 1,
+      "size": 1261,
+      "cat": 10
+    },
+    {
+      "id": "אדמו״רי_חב״ד_ויהדות_גרמניה",
+      "title": "אדמו״רי חב״ד ויהדות גרמניה",
+      "pages": 1,
+      "size": 1532,
+      "cat": 10
+    },
+    {
+      "id": "בכל_ביתי_נאמן_הוא",
+      "title": "בכל ביתי נאמן הוא",
+      "pages": 1,
+      "size": 1435,
+      "cat": 10
+    },
+    {
+      "id": "זכרון_לבני_ישראל",
+      "title": "זכרון לבני ישראל",
+      "pages": 3,
+      "size": 39959,
+      "cat": 10
+    },
+    {
+      "id": "זכרונותי",
+      "title": "זכרונותי",
+      "pages": 7,
+      "size": 70805,
+      "cat": 10
+    },
+    {
+      "id": "יומן_השליחות_המיוחדת",
+      "title": "יומן השליחות המיוחדת",
+      "pages": 7,
+      "size": 62540,
+      "cat": 10
+    },
+    {
+      "id": "למען_ידעו_בנים",
+      "title": "למען ידעו בנים",
+      "pages": 7,
+      "size": 43364,
+      "cat": 10
+    },
+    {
+      "id": "עבודת_הקודש",
+      "title": "עבודת הקודש",
+      "pages": 1,
+      "size": 1240,
+      "cat": 10
+    },
+    {
+      "id": "תולדות_אברהם_חיים",
+      "title": "תולדות אברהם חיים",
+      "pages": 13,
+      "size": 78988,
+      "cat": 10
+    },
+    {
+      "id": "תולדות_חב״ד_בארץ_הקודש",
+      "title": "תולדות חב״ד בארץ הקודש",
+      "pages": 20,
+      "size": 121458,
+      "cat": 10
+    },
+    {
+      "id": "תולדות_חב״ד_בפולין_ליטא_ולטביא",
+      "title": "תולדות חב״ד בפולין ליטא ולטביא",
+      "pages": 7,
+      "size": 178659,
+      "cat": 10
+    },
+    {
+      "id": "תולדות_חב״ד_ברוסיה",
+      "title": "תולדות חב״ד ברוסיה",
+      "pages": 2,
+      "size": 4174,
+      "cat": 10
+    },
+    {
+      "id": "תערוכות_הספריה",
+      "title": "תערוכות הספריה",
+      "pages": 1,
+      "size": 35261,
+      "cat": 10
     }
   ]
 }
