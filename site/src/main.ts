@@ -141,10 +141,19 @@ class UndauntedApp {
     const container = document.getElementById('source-content');
     if (container) container.innerHTML = '<div class="loading">Loading…</div>';
 
-    // Load all pages and filter by chapter
+    const chapter = this.chapters.find((c) => c.num === chapterNum);
+
+    // Skip page fetching if corpus hasn't been built (first/last both 0)
+    if (!chapter || chapter.first === 0) {
+      this.renderSourceText();
+      this.updateChapterNav();
+      return;
+    }
+
+    // Only fetch pages in this chapter's known range
     const pages: Page[] = [];
     const fetches: Promise<void>[] = [];
-    for (let p = 19; p <= 413; p++) {
+    for (let p = chapter.first; p <= chapter.last; p++) {
       fetches.push(
         fetch(`./data/pages/${p}.json`)
           .then((r) => (r.ok ? r.json() : null))
@@ -221,7 +230,11 @@ class UndauntedApp {
     if (!container) return;
 
     if (this.currentPages.length === 0) {
-      container.innerHTML = '<div class="loading">No pages found for this chapter.</div>';
+      const chapter = this.chapters.find((c) => c.num === this.currentChapter);
+      const msg = (!chapter || chapter.first === 0)
+        ? 'Source text not available — corpus not yet built.'
+        : 'No pages found for this chapter.';
+      container.innerHTML = `<div class="loading">${msg}</div>`;
       return;
     }
 
