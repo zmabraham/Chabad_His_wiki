@@ -9,11 +9,17 @@
     - the Rayatz
     - the Rebbe
     - the Frierdiker Rebbe
+    - Previous Rebbe
+    - sixth Rebbe
   born: "1880-06-21"
   died: "1950-01-28"
   description: |
-    Sixth Lubavitcher Rebbe, known as the Rayatz or the Frierdiker Rebbe.
-    Led Chabad through the most tumultuous period in Jewish history.
+    Sixth Lubavitcher Rebbe, known as the Rayatz (acronym of Rabbi Yosef Yitzchak) or
+    the Frierdiker Rebbe (Previous Rebbe). Born in Lubavitch to Rabbi Shalom Dovber,
+    he succeeded his father in 1920. Led Chabad through Soviet persecution, exile,
+    the Holocaust, and the rebuilding of Chabad in America. His courage during the
+    1927 Soviet arrest became legendary. Arrived in New York on March 9, 1940, and
+    spent his final decade transforming American Jewish life.
 
 - id: person.shalom_dovber
   type: person
@@ -23,10 +29,15 @@
     - The Rashab
     - Rashab
     - The Rebbe Rashab
+    - fifth Rebbe
   born: "1860-10-20"
   died: "1920-03-21"
   description: |
-    Fifth Lubavitcher Rebbe, father of Rabbi Yosef Yitzchak.
+    Fifth Lubavitcher Rebbe and father of Rabbi Yosef Yitzchak. Known as the Rashab
+    (acronym of Rabbi Shalom Ber). Founded Tomchei Temimim yeshiva in Lubavitch in 1897,
+    which became the flagship institution of Chabad education. A prolific author of
+    Chassidic discourses. Passed away in Rostov-on-Don during a critical period of
+    upheaval following World War I.
 
 - id: person.menachem_mendel
   type: person
@@ -37,10 +48,15 @@
     - Ramash
     - the Ramash
     - the seventh Rebbe
+    - seventh Lubavitcher Rebbe
   born: "1902-04-18"
   died: "1994-06-12"
   description: |
-    Seventh Lubavitcher Rebbe, son-in-law of Rabbi Yosef Yitzchak.
+    Seventh Lubavitcher Rebbe, son-in-law of Rabbi Yosef Yitzchak. Married Chaya Mushka
+    Schneersohn in 1928 in Warsaw. After the passing of his father-in-law on 10 Shvat 1950,
+    he accepted the leadership of Chabad-Lubavitch. Under his direction, Chabad became a
+    worldwide movement with thousands of emissary families in over 100 countries. His
+    father was Rabbi Levi Yitzchak Schneersohn, the chief rabbi of Yekaterinoslav.
 
 - id: person.shmaryahu_gurary
   type: person
@@ -50,22 +66,389 @@
     - Rashag
     - the Rashag
   description: |
-    Eldest son-in-law of Rabbi Yosef Yitzchak.
+    Son-in-law of Rabbi Yosef Yitzchak, having married his eldest daughter Chana in 1926.
+    Known by the acronym Rashag. Served in senior positions in the Chabad movement
+    and was deeply involved in Chabad activities throughout the interwar years and
+    in America.
 
-- id: person.mushka
+- id: person.chaya_mushka
   type: person
-  primary_name: Rebbetzin Mushka Schneersohn
+  primary_name: Rebbetzin Chaya Mushka Schneersohn
   aliases:
+    - Chaya Mushka
     - Mushka
-    - Shterna Sara
+    - Moussia
+  born: "1901"
+  died: "1988"
   description: |
-    Wife of Rabbi Yosef Yitzchak.
+    Second daughter of Rabbi Yosef Yitzchak and Nechama Dina. Married Rabbi Menachem
+    Mendel Schneersohn in 1928 in Warsaw in a celebrated wedding. Accompanied her father
+    and family in their escape from Nazi Europe in 1940. Served as an anchor for her
+    husband during decades of leadership. Highly educated and intellectually sharp,
+    she was deeply devoted to her father.
 
-- id: person.levi_yitzchok
+- id: person.nechama_dina
   type: person
-  primary_name: Rabbi Levi Yitzchok Schneersohn
+  primary_name: Rebbetzin Nechama Dina Schneersohn
   aliases:
-    - Levi Yitzchok
-    - R. Levi Yitzchok
+    - Nechama Dina
+    - Nechama Dina Horenstein
+  born: "1880"
+  died: "1971"
   description: |
-    Father of Rabbi Yosef Yitzchak, son of the Rashab.
+    Wife of Rabbi Yosef Yitzchak Schneersohn. Born Nechama Dina Horenstein. Accompanied
+    her husband through all the trials of Soviet persecution, exile, and the flight from
+    Nazi Europe. Mother of three daughters: Chana, Chaya Mushka, and Sheina.
+
+- id: person.chana_gurary
+  type: person
+  primary_name: Rebbetzin Chana Gurary
+  aliases:
+    - Chana Gurary
+    - Chana
+  born: "1899"
+  died: "1974"
+  description: |
+    Eldest daughter of Rabbi Yosef Yitzchak and Nechama Dina. Married Rabbi Shmaryahu
+    Gurary (the Rashag) in 1926. Escaped from Nazi Europe with the family in 1940.
+    Settled in America and was active in Chabad community life.
+
+- id: person.sheina_horenstein
+  type: person
+  primary_name: Rebbetzin Sheina Horenstein
+  aliases:
+    - Sheina
+    - Sheina Schneersohn
+  born: "1903"
+  died: "1942"
+  description: |
+    Third and youngest daughter of Rabbi Yosef Yitzchak and Nechama Dina. Did not escape
+    Nazi Europe with the family in 1940. Perished in the Holocaust along with her husband
+    Rabbi Menachem Mendel Horenstein. Her fate was a source of profound grief for the
+    Frierdiker Rebbe.
+
+- id: person.shterna_sara
+  type: person
+  primary_name: Rebbetzin Shterna Sara Schneersohn
+  aliases:
+    - Shterna Sara
+    - Rebbetzin Shterna Sara
+  born: "1860"
+  died: "1942"
+  description: |
+    Wife of the Rashab (Rabbi Shalom Dovber) and mother of Rabbi Yosef Yitzchak.
+    A woman of great piety and learning. Lived through the upheaval of World War I
+    and the Russian Revolution. Her influence on her son's upbringing was profound.
+
+- id: person.levi_yitzchak_schneersohn
+  type: person
+  primary_name: Rabbi Levi Yitzchak Schneersohn
+  aliases:
+    - Levi Yitzchak Schneersohn
+    - R. Levi Yitzchak
+    - father of the Rebbe
+  born: "1878"
+  died: "1944"
+  description: |
+    Father of Rabbi Menachem Mendel Schneersohn, the seventh Rebbe. Served as chief
+    rabbi of Yekaterinoslav (Dnepropetrovsk), Ukraine. A renowned Kabbalist and
+    Torah scholar. Was arrested by Soviet authorities in 1939 and died in exile in
+    Kazakhstan. Author of Likkutei Levi Yitzchak, a Kabbalistic commentary.
+
+- id: person.alter_rebbe
+  type: person
+  primary_name: Rabbi Shneur Zalman of Liadi
+  aliases:
+    - The Alter Rebbe
+    - Alter Rebbe
+    - the Baal HaTanya
+    - Rabbi Schneur Zalman
+    - first Rebbe
+  born: "1745"
+  died: "1812"
+  description: |
+    Founder and first Lubavitcher Rebbe. Founded the Chabad school of Chassidism.
+    Author of the Tanya, the foundational text of Chabad philosophy, and the Shulchan
+    Aruch HaRav. Twice imprisoned by the Czarist government. Established the town of
+    Liadi as his base and later fled Napoleon's invasion. His yahrzeit is 24 Tevet.
+
+- id: person.mitteler_rebbe
+  type: person
+  primary_name: Rabbi DovBer Schneuri
+  aliases:
+    - The Mitteler Rebbe
+    - Mitteler Rebbe
+    - second Rebbe
+    - Rabbi DovBer of Lubavitch
+  born: "1773"
+  died: "1827"
+  description: |
+    Second Lubavitcher Rebbe, son of the Alter Rebbe. Also known as the Mitteler (Middle)
+    Rebbe. Moved the center of Chabad to Lubavitch, which remained the movement's
+    home for over a century. Known for his lengthy and elaborate Chassidic discourses.
+    He was the one who established Lubavitch as the iconic center of the movement.
+
+- id: person.tzemach_tzedek
+  type: person
+  primary_name: Rabbi Menachem Mendel Schneersohn (Tzemach Tzedek)
+  aliases:
+    - The Tzemach Tzedek
+    - Tzemach Tzedek
+    - third Rebbe
+  born: "1789"
+  died: "1866"
+  description: |
+    Third Lubavitcher Rebbe, grandson and son-in-law of the Mitteler Rebbe. Named after
+    his responsa work Tzemach Tzedek. Led Chabad during the era of Czar Nicholas I's
+    harsh decrees against Jewish life. Championed traditional Jewish education against
+    the Haskalah (Enlightenment) movement. Father of seven sons, each of whom became
+    a Chassidic leader.
+
+- id: person.maharash
+  type: person
+  primary_name: Rabbi Shmuel Schneersohn
+  aliases:
+    - The Maharash
+    - Maharash
+    - fourth Rebbe
+  born: "1834"
+  died: "1882"
+  description: |
+    Fourth Lubavitcher Rebbe, youngest son of the Tzemach Tzedek. Known for his teaching
+    "Lechatchila Ariber" — one should begin at the top, not try to overcome obstacles
+    but start above them. Under his leadership Chabad expanded its reach. Father of
+    the Rashab (fifth Rebbe).
+
+- id: person.chatche_feigin
+  type: person
+  primary_name: Chatche Feigin
+  aliases:
+    - Chaim Lieberman Feigin
+    - the Rebbe's secretary
+    - Reb Chatche
+  description: |
+    Close aide and secretary of Rabbi Yosef Yitzchak during the Soviet years and beyond.
+    Worked tirelessly to maintain communication networks and protect the Rebbe's
+    correspondence and documents under dangerous conditions.
+
+- id: person.chaim_lieberman
+  type: person
+  primary_name: Chaim Lieberman
+  aliases:
+    - Lieberman
+    - the librarian
+  description: |
+    Librarian and aide to Rabbi Yosef Yitzchak. Helped preserve the Chabad library
+    and documents. Was involved in efforts to smuggle books and writings out of the
+    Soviet Union. Later served as an important figure in preserving Chabad's literary heritage.
+
+- id: person.alexander_lavut
+  type: person
+  primary_name: Alexander Lavut
+  aliases:
+    - Lavut
+  description: |
+    Chassidic emissary of Rabbi Yosef Yitzchak, active in the underground Jewish
+    network in Soviet Russia. Participated in maintaining clandestine yeshivos and
+    Jewish education under Soviet rule. Was arrested by Soviet authorities for his
+    activities.
+
+- id: person.eliezer_karasik
+  type: person
+  primary_name: Eliezer Karasik
+  aliases:
+    - Karasik
+  description: |
+    Devoted Chassid and soldier in the Rebbe's underground network in Soviet Russia.
+    Participated in the clandestine activities to sustain Jewish life and learning
+    under Communist rule.
+
+- id: person.nissan_neminov
+  type: person
+  primary_name: Rabbi Nissan Neminov
+  aliases:
+    - Nissan Neminov
+    - Reb Nissan
+  description: |
+    Mashpia (spiritual mentor) and leading Chassid in the Rebbe's inner circle. Active
+    in the underground Jewish educational network in Soviet Russia. Known for his deep
+    knowledge of Chassidus and his role in transmitting Chabad teachings under
+    dangerous conditions.
+
+- id: person.agent_nachmanson
+  type: person
+  primary_name: Nachmanson
+  aliases:
+    - Agent Nachmanson
+    - GPU agent Nachmanson
+  description: |
+    Soviet GPU secret police agent who led the operation to arrest Rabbi Yosef Yitzchak
+    in Leningrad on June 15, 1927. The arrest took place at midnight at the Rebbe's
+    residence. Nachmanson conducted the initial phases of the case against the Rebbe.
+
+- id: person.agent_lulav
+  type: person
+  primary_name: Lulav
+  aliases:
+    - Agent Lulav
+    - GPU interrogator Lulav
+  description: |
+    Soviet GPU interrogator who conducted sessions with Rabbi Yosef Yitzchak during
+    his imprisonment. During one famous exchange, when Lulav threatened the Rebbe with
+    a pistol, the Rebbe gave his celebrated response about one who has two worlds
+    fearing nothing. Lulav reportedly converted to Judaism after his encounters
+    with the Rebbe.
+
+- id: person.felix_dzerzhinsky
+  type: person
+  primary_name: Felix Dzerzhinsky
+  aliases:
+    - Dzerzhinsky
+    - Iron Felix
+    - founder of the Cheka
+  born: "1877"
+  died: "1926"
+  description: |
+    Polish-born Bolshevik revolutionary who founded the Cheka, the first Soviet secret
+    police organization (later GPU, OGPU, NKVD). Established the apparatus of terror
+    that would be used to persecute religious communities including Chabad. Although he
+    died in 1926 before the 1927 arrest, his organizational legacy was the instrument
+    of the Rebbe's persecution.
+
+- id: person.dimanstein
+  type: person
+  primary_name: Shimon Dimanstein
+  aliases:
+    - Dimanstein
+  description: |
+    Head of the Yevsektsiya, the Jewish Section of the Soviet Communist Party, in its
+    early years. A former yeshiva student who became a Bolshevik, he oversaw campaigns
+    against Jewish religious life and institutions. The Yevsektsiya under his leadership
+    targeted Chabad and other religious Jewish organizations.
+
+- id: person.max_rhoade
+  type: person
+  primary_name: Max Rhoade
+  aliases:
+    - Rhoade
+    - the American lawyer
+  description: |
+    American lawyer and advocate who played a pivotal role in securing the release and
+    exile of Rabbi Yosef Yitzchak from Soviet imprisonment in 1927. Worked through
+    diplomatic channels and international pressure to commute the death sentence and
+    arrange for the Rebbe's release and eventual exile to Riga.
+
+- id: person.german_ambassador
+  type: person
+  primary_name: German Ambassador to the Soviet Union
+  aliases:
+    - the German ambassador
+    - German envoy
+  description: |
+    The German diplomatic representative to the Soviet Union who, in 1927, interceded
+    with Soviet authorities on behalf of Rabbi Yosef Yitzchak. Germany's intervention
+    was part of the international diplomatic pressure that led to the commutation of
+    the Rebbe's death sentence.
+
+- id: person.jacob_hecht
+  type: person
+  primary_name: Rabbi Jacob J. Hecht
+  aliases:
+    - Jacob Hecht
+    - Reb Yankel Hecht
+  description: |
+    American Chabad rabbi who was among the early students and supporters of Rabbi
+    Yosef Yitzchak in America. Active in Chabad outreach and educational work in
+    New York in the 1940s, working to build Chabad infrastructure in the New World.
+
+- id: person.shlomo_aharon_kazarnovsky
+  type: person
+  primary_name: Rabbi Shlomo Aharon Kazarnovsky
+  aliases:
+    - Kazarnovsky
+    - Reb Shlomo Aharon
+  description: |
+    Devoted Chassid who served Rabbi Yosef Yitzchak. Active in the Rebbe's court
+    in America, participating in the work of building Chabad presence and institutions
+    in New York in the early 1940s.
+
+- id: person.moshe_razumni
+  type: person
+  primary_name: Moshe Razumni
+  aliases:
+    - Razumni
+  description: |
+    Chassid of Rabbi Yosef Yitzchak involved in American Chabad activities. Part of
+    the community that coalesced around the Rebbe after his arrival in New York in 1940,
+    contributing to the establishment of Chabad in America.
+
+- id: person.bloch_family
+  type: person
+  primary_name: Bloch Family (Velvel Bloch)
+  aliases:
+    - Velvel Bloch
+    - the Bloch family
+  description: |
+    Family associated with Tomchei Temimim and Chabad activities in the Soviet era.
+    Maintained connections to the Rebbe's network through difficult times.
+
+
+- id: person.israel_jacobson
+  type: person
+  primary_name: Israel Jacobson
+  aliases:
+    - Jacobson
+    - the American Chabad representative
+  description: |
+    American Chabad representative who worked in Washington D.C. and liaised with the
+    U.S. State Department on behalf of Rabbi Yosef Yitzchak. Instrumental in arranging
+    the diplomatic rescue mission that brought the Rebbe to America in 1940.
+
+- id: person.mendel_horenstein
+  type: person
+  primary_name: Rabbi Menachem Mendel Horenstein
+  aliases:
+    - Menachem Mendel Horenstein
+    - husband of Sheina
+  died: "1942"
+  description: |
+    Husband of Rebbetzin Sheina, the youngest daughter of Rabbi Yosef Yitzchak.
+    Perished in the Holocaust. His death, along with his wife Sheina's, was a devastating
+    personal loss for the Frierdiker Rebbe.
+
+- id: person.schneersohn_great_grandfather
+  type: person
+  primary_name: Rabbi Menachem Nachum Schneersohn
+  aliases:
+    - Menachem Nachum of Vitebsk
+    - great-grandfather of the Rashab
+  description: |
+    An ancestor in the Schneersohn family lineage, connected to the early Chabad
+    community in Vitebsk.
+
+- id: person.groner
+  type: person
+  primary_name: Rabbi Leibel Groner
+  aliases:
+    - Groner
+    - Leibel Groner
+  description: |
+    Personal secretary to Rabbi Menachem Mendel Schneersohn, the seventh Rebbe.
+    As a young man in Brooklyn, was part of the early Chabad community that formed
+    around the Frierdiker Rebbe after his arrival in America.
+
+- id: person.baal_shem_tov
+  type: person
+  primary_name: Rabbi Yisrael Baal Shem Tov
+  aliases:
+    - The Baal Shem Tov
+    - Baal Shem Tov
+    - Besht
+    - the Besht
+  born: "1698"
+  died: "1760"
+  description: |
+    Founder of the broader Chassidic movement. His teachings of divine immanence,
+    joy in divine service, and the importance of every Jew form the foundation upon
+    which Chabad Chassidism was built by the Alter Rebbe. The Frierdiker Rebbe often
+    invoked his legacy and spirit.

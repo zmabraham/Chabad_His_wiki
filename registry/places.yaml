@@ -3,8 +3,15 @@
   primary_name: Lubavitch
   aliases:
     - Lyubavichi
+    - Lubavitchi
+    - the shtetl of Lubavitch
   description: |
-    Historic town in White Russia, center of Chabad for 102 years.
+    Historic town in White Russia (modern-day Smolensk Oblast, Russia), center of
+    Chabad-Lubavitch for 102 years (1812-1915). The second Lubavitcher Rebbe
+    established the movement's home there. The town gave the movement its name.
+    Childhood home of Rabbi Yosef Yitzchak, where his father the Rashab held court
+    and where he absorbed the atmosphere of Chassidic life. The Rashab founded
+    Tomchei Temimim yeshiva there in 1897.
 
 - id: place.leningrad
   type: place
@@ -14,36 +21,56 @@
     - St. Petersburg
     - Saint Petersburg
   description: |
-    Soviet-era name for St. Petersburg; site of the Rayatz's arrest in 1927.
+    Soviet-era name for St. Petersburg, Russia's former imperial capital. Site of
+    Rabbi Yosef Yitzchak's arrest by GPU agents on June 15, 1927. The Rebbe maintained
+    a residence there and used it as a base for his activities. The arrest at midnight
+    at his Leningrad home became one of the defining moments of his biography.
 
 - id: place.rostov
   type: place
-  primary_name: Rostov
+  primary_name: Rostov-on-Don
   aliases:
-    - Rostov-on-Don
+    - Rostov
+    - Rostov on Don
   description: |
-    City where the Rayatz was exiled after his arrest.
+    City in southern Russia where the Rashab (fifth Rebbe) was living when he passed
+    away on 2 Nissan 1920. Rabbi Yosef Yitzchak was at his father's bedside and assumed
+    the mantle of leadership there. Rostov became associated with the passing of one
+    era and the beginning of another.
 
 - id: place.riga
   type: place
   primary_name: Riga
-  aliases: []
+  aliases:
+    - Riga, Latvia
   description: |
-    Capital of Latvia, where the Rayatz lived in exile.
+    Capital of Latvia. After being exiled from the Soviet Union in October 1927,
+    Rabbi Yosef Yitzchak established his court in Riga, which served as his base of
+    operations for international Chabad activities, correspondence, and leadership for
+    several years. Riga provided relative safety and freedom compared to Soviet Russia.
 
 - id: place.warsaw
   type: place
   primary_name: Warsaw
-  aliases: []
+  aliases:
+    - Warszawa
+    - Warsaw, Poland
   description: |
-    Capital of Poland, where the Rayatz lived before WWII.
+    Capital of Poland. Rabbi Yosef Yitzchak moved to Warsaw in 1933 from Riga.
+    Site of the celebrated wedding of Chaya Mushka and Menachem Mendel in 1928.
+    The Rebbe was in Warsaw when Germany invaded Poland on September 1, 1939,
+    and had to be rescued from the besieged city.
 
 - id: place.otwock
   type: place
   primary_name: Otwock
-  aliases: []
+  aliases:
+    - Otvotsk
   description: |
-    Town near Warsaw where the Rayatz established his court.
+    Town near Warsaw where Rabbi Yosef Yitzchak established his court and residence
+    during much of his Polish period (1930s). His yeshiva Tomchei Temimim was relocated
+    there. The town served as a Chassidic center in interwar Poland. He was in Otwock
+    when war broke out in 1939.
 
 - id: place.new_york
   type: place
@@ -52,14 +79,36 @@
     - NYC
     - New York City
   description: |
-    City where the Rayatz settled after fleeing Europe.
+    City where Rabbi Yosef Yitzchak arrived on March 9, 1940, after his rescue from
+    Nazi-occupied Poland. He established his court at 770 Eastern Parkway in Brooklyn.
+    New York became the new center of Chabad, and the Rebbe dedicated his final decade
+    to transforming American Jewish life.
 
 - id: place.brooklyn
   type: place
   primary_name: Brooklyn
-  aliases: []
+  aliases:
+    - Brooklyn, New York
+    - Crown Heights
   description: |
-    Borough of New York, home to 770 Eastern Parkway.
+    Borough of New York City; specifically the neighborhood of Crown Heights. Home to
+    770 Eastern Parkway, the Chabad world headquarters and the Rebbe's residence from
+    1940. The community that grew around 770 became the nucleus of the worldwide Chabad
+    movement.
+
+- id: place.770
+  type: place
+  primary_name: 770 Eastern Parkway
+  aliases:
+    - "770"
+    - seven seventy
+    - Chabad headquarters
+    - the Rebbe's shul
+  description: |
+    The address at 770 Eastern Parkway in Crown Heights, Brooklyn, that has served as
+    Chabad-Lubavitch world headquarters since Rabbi Yosef Yitzchak acquired the building
+    in 1940. A three-story red-brick building that became the symbolic and spiritual
+    center of Chabad worldwide. Known simply as "770" in Chabad circles.
 
 - id: place.russia
   type: place
@@ -69,15 +118,24 @@
     - czarist Russia
     - Soviet Union
     - USSR
+    - Soviet Russia
   description: |
-    Country where the Rayatz was born and faced persecution.
+    The country where Rabbi Yosef Yitzchak was born and raised and where Chabad had
+    its historic roots. Under the Czars, Jews faced periodic persecution; under the
+    Soviets beginning in 1917, religious life faced systematic destruction. The Rebbe
+    fought to maintain Jewish life there until his exile in 1927.
 
 - id: place.poland
   type: place
   primary_name: Poland
-  aliases: []
+  aliases:
+    - the Polish Republic
+    - interwar Poland
   description: |
-    Country where the Rayatz lived during the interwar period.
+    Country where Rabbi Yosef Yitzchak lived from 1933 until the German invasion in
+    1939. Poland had a massive Jewish population and was home to a vibrant Chassidic
+    life. The German invasion and subsequent occupation led to the Holocaust that
+    destroyed Polish Jewry.
 
 - id: place.america
   type: place
@@ -86,5 +144,163 @@
     - America
     - USA
     - U.S.
+    - the New World
   description: |
-    Country where the Rayatz rebuilt his community after fleeing Europe.
+    Country where Rabbi Yosef Yitzchak rebuilt Chabad after his rescue from Nazi
+    Europe in 1940. He famously challenged the notion that "America is different,"
+    insisting that authentic Torah observance was possible and necessary in the
+    American context. The foundation he laid became the basis for worldwide Chabad expansion.
+
+- id: place.spalerno_prison
+  type: place
+  primary_name: Spalerno Prison
+  aliases:
+    - Shpalernaya Prison
+    - Spalernaya
+    - the Leningrad prison
+  description: |
+    The Soviet prison in Leningrad where Rabbi Yosef Yitzchak was held following
+    his arrest on June 15, 1927. Also known as Shpalernaya. He was interrogated there
+    by GPU agents including Agent Lulav. The conditions were harsh and the interrogations
+    intense, yet the Rebbe maintained his composure and faith throughout.
+
+- id: place.kostroma
+  type: place
+  primary_name: Kostroma
+  aliases:
+    - Kostroma exile
+  description: |
+    City in north-central Russia, northeast of Moscow. The location designated as the
+    Rebbe's place of exile after his 1927 arrest, when his death sentence was commuted
+    to three years of exile. Kostroma was a remote, difficult posting, but the Rebbe
+    was eventually permitted to leave the Soviet Union entirely.
+
+- id: place.mohilev
+  type: place
+  primary_name: Mogilev
+  aliases:
+    - Mohilev
+    - Mogilev, Belarus
+    - Mahilyow
+  description: |
+    City in eastern Belarus (White Russia), historically significant to the Chabad
+    movement. The region of Mogilev was part of the Pale of Settlement where large
+    Jewish communities existed. Connected to early Chabad history and the movement
+    of the first Rebbes.
+
+- id: place.vitebsk
+  type: place
+  primary_name: Vitebsk
+  aliases:
+    - Vitebsk, Belarus
+    - Vitsebsk
+  description: |
+    Major city in northeastern Belarus, historically a Chabad stronghold with a large
+    Jewish community. Connected to early Chabad history and the movement of the Alter
+    Rebbe. Part of the broader region where Chabad maintained significant presence
+    and underground activities during the Soviet era.
+
+- id: place.malachovka
+  type: place
+  primary_name: Malachovka
+  aliases:
+    - Malakhovka
+    - summer retreat near Moscow
+  description: |
+    Town near Moscow that served as a summer retreat for Rabbi Yosef Yitzchak and
+    his family during his time in Soviet Russia. It was a location where some Chabad
+    activity took place and where the Rebbe could operate with slightly more freedom
+    during warmer months.
+
+- id: place.berlin
+  type: place
+  primary_name: Berlin
+  aliases:
+    - Berlin, Germany
+    - Nazi Berlin
+  description: |
+    Capital of Germany. Rabbi Yosef Yitzchak passed through Berlin during his travels
+    in Europe. During the Nazi era, Berlin became the center of the regime that persecuted
+    and ultimately attempted to annihilate European Jewry. The German Jewish community's
+    fate was emblematic of the broader Holocaust.
+
+- id: place.paris
+  type: place
+  primary_name: Paris
+  aliases:
+    - Paris, France
+  description: |
+    Capital of France. A major transit and refugee city for Jews fleeing Eastern Europe.
+    Rabbi Yosef Yitzchak and his family passed through Paris during their escape from
+    Nazi-occupied Poland in 1940, before embarking for the United States. Many Chabad
+    Chassidim were stranded in Paris as refugees.
+
+- id: place.dnepropetrovsk
+  type: place
+  primary_name: Dnepropetrovsk
+  aliases:
+    - Yekaterinoslav
+    - Ekaterinoslav
+    - Dnipro
+  description: |
+    Major city in central Ukraine, known as Yekaterinoslav during the imperial period.
+    Served as the rabbinate of Rabbi Levi Yitzchak Schneersohn, father of the seventh
+    Rebbe. A significant Jewish community existed there before the Soviet persecutions
+    and the Holocaust.
+
+- id: place.pale_of_settlement
+  type: place
+  primary_name: Pale of Settlement
+  aliases:
+    - the Pale
+    - Pale of Jewish Settlement
+  description: |
+    The region of the Russian Empire within which Jews were required to reside.
+    Encompassed present-day Poland, Lithuania, Belarus, Ukraine, and parts of Russia.
+    The vast majority of the Chabad communities and the setting for most of the
+    Frierdiker Rebbe's early life were located within the Pale.
+
+- id: place.ukraine
+  type: place
+  primary_name: Ukraine
+  aliases:
+    - the Ukraine
+    - Ukrainian Soviet Republic
+  description: |
+    Eastern European country that was home to millions of Jews and major Chabad
+    communities. Under Soviet rule, Ukraine was a site of intense anti-religious
+    persecution. Rabbi Levi Yitzchak Schneersohn served as chief rabbi of Dnepropetrovsk
+    in Ukraine before his arrest and exile.
+
+- id: place.liadi
+  type: place
+  primary_name: Liadi
+  aliases:
+    - Lyady
+    - the town of Liadi
+  description: |
+    Town in Belarus where the Alter Rebbe (first Lubavitcher Rebbe) established his
+    court after being forced to leave Liozna. Liadi is associated with the flight of
+    the Alter Rebbe during Napoleon's invasion in 1812, during which he passed away.
+
+- id: place.amsterdam
+  type: place
+  primary_name: Amsterdam
+  aliases:
+    - Amsterdam, Holland
+    - Amsterdam, Netherlands
+  description: |
+    City in the Netherlands that served as one of the stopping points during the rescue
+    and flight of Rabbi Yosef Yitzchak from Nazi-occupied Poland in 1940. The sea voyage
+    to the United States departed from European ports.
+
+- id: place.latvia
+  type: place
+  primary_name: Latvia
+  aliases:
+    - Republic of Latvia
+  description: |
+    Baltic state where Rabbi Yosef Yitzchak lived in exile after leaving the Soviet
+    Union in 1927. Riga, Latvia's capital, served as his base of operations for
+    international Chabad activities for several years. Latvia provided relative freedom
+    for religious Jewish life compared to Soviet Russia.

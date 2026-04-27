@@ -1,1 +1,124 @@
-# Add quotes here - one YAML document per entry
+- id: quote.pistol_speech
+  type: quote
+  primary_name: The Pistol Speech
+  aliases:
+    - pistol quote
+    - two worlds one desire
+    - the gun quote
+  description: |
+    During an interrogation session at Spalerno Prison in 1927, GPU interrogator Lulav
+    pointed a pistol at Rabbi Yosef Yitzchak to intimidate him. The Rebbe looked at the
+    gun calmly and said: "This toy can only frighten someone who has one world and many
+    desires. But someone who has two worlds and one desire — it cannot frighten at all."
+    The remark stunned the interrogator. Lulav is reported to have later converted to
+    Judaism.
+  speaker: person.yosef_yitzchak
+  source: Chapter 4, Armed Men at Midnight
+
+- id: quote.sign_away_my_life
+  type: quote
+  primary_name: You Can Force Me to Sign Away My Life
+  aliases:
+    - life not soul quote
+    - signing away the soul
+  description: |
+    During his Soviet imprisonment in 1927, when pressured to sign documents
+    surrendering his religious activities, Rabbi Yosef Yitzchak reportedly declared
+    that the authorities could sign away his physical life but not his soul. The precise
+    formulation varies in transmission but captures his absolute refusal to compromise
+    his spiritual commitments under threat of death.
+  speaker: person.yosef_yitzchak
+  source: Chapter 4, Armed Men at Midnight
+
+- id: quote.america_is_not_different
+  type: quote
+  primary_name: America Is No Different
+  aliases:
+    - America iz nisht anderesh
+    - America is not different
+    - the American challenge
+  description: |
+    Upon arriving in America in 1940, Rabbi Yosef Yitzchak pushed back forcefully
+    against the prevailing notion that authentic Torah observance was impossible in
+    the American environment. His declaration — "America iz nisht anderesh" (America
+    is no different) — challenged American Jews who believed that assimilation was
+    inevitable or acceptable. This became a rallying cry for the Chabad mission in
+    America.
+  speaker: person.yosef_yitzchak
+  source: Chapter 10, America Iz Nisht Anderesh
+
+- id: quote.we_did_not_go_into_exile
+  type: quote
+  primary_name: The Torah Did Not Go Into Exile
+  aliases:
+    - Torah did not go into exile
+    - exile quote
+  description: |
+    A famous statement by Rabbi Yosef Yitzchak expressing that while the Jewish people
+    may be in physical exile, the Torah itself — and the Jew's inner spiritual reality —
+    is never exiled. This message sustained Chassidim under Soviet oppression and
+    throughout the years of persecution, reminding them that external circumstances
+    cannot diminish the eternal nature of Torah.
+  speaker: person.yosef_yitzchak
+  source: Chapter 3, The Secret Covenant
+
+- id: quote.rashab_tomchei_temimim
+  type: quote
+  primary_name: The Rashab on Tomchei Temimim
+  aliases:
+    - soldiers of the House of David
+    - purpose of the yeshiva
+  description: |
+    When founding Tomchei Temimim in 1897, the Rashab (Rabbi Shalom Dovber) declared
+    that the students of the yeshiva are to be "soldiers of the House of David" — dedicated
+    warriors for Torah and Chassidus. He articulated that the purpose of the yeshiva
+    was not merely academic learning but the forging of Chassidim who would sacrifice
+    themselves for the sake of Jewish continuity. This charge defined the ethos of
+    Tomchei Temimim for generations.
+  speaker: person.shalom_dovber
+  source: Chapter 2, Tomchei Temimim
+
+- id: quote.single_candle
+  type: quote
+  primary_name: A Single Candle Can Illuminate a Dark Room
+  aliases:
+    - candle quote
+    - light in darkness
+  description: |
+    Rabbi Yosef Yitzchak frequently employed the metaphor of a single candle
+    illuminating great darkness to convey the power of one dedicated Jew to transform
+    an entire community. This teaching was central to his encouragement of shluchim
+    (emissaries) and his vision of Chabad outreach: one person placed in the right
+    location with commitment and warmth could ignite Jewish life.
+  speaker: person.yosef_yitzchak
+  source: Chapter 11, A Global Vision
+
+- id: quote.every_jew_a_flame
+  type: quote
+  primary_name: Every Jew Has a Flame That Cannot Be Extinguished
+  aliases:
+    - inextinguishable flame
+    - Jewish soul quote
+  description: |
+    A teaching of Rabbi Yosef Yitzchak about the inalienable nature of the Jewish soul.
+    No matter how far a Jew may have drifted from Torah or how oppressive the external
+    circumstances, the divine spark — the pintele Yid, the essential Jewish point —
+    can never be extinguished. This teaching underpinned his kiruv work and his
+    unshakeable belief in every Jew's capacity to return.
+  speaker: person.yosef_yitzchak
+  source: Chapter 10, America Iz Nisht Anderesh
+
+- id: quote.yud_tes_kislev_1927
+  type: quote
+  primary_name: The 19 Kislev Declaration from Prison
+  aliases:
+    - Kislev message
+    - message from Spalerno
+  description: |
+    On 19 Kislev 5688 (the Rosh Hashanah of Chassidus, the date of the Alter Rebbe's
+    liberation in 1798), Rabbi Yosef Yitzchak — still imprisoned by the Soviets —
+    sent out a message connecting his own imprisonment and anticipated liberation
+    to the Alter Rebbe's liberation, expressing absolute confidence in divine redemption
+    and urging his Chassidim to strengthen their commitment to Torah and Chassidus.
+  speaker: person.yosef_yitzchak
+  source: Chapter 4, Armed Men at Midnight

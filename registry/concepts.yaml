@@ -1,1 +1,333 @@
-# Add concepts here - one YAML document per entry
+- id: concept.chassidus
+  type: concept
+  primary_name: Chassidus
+  aliases:
+    - Chassidism
+    - Chassidic philosophy
+    - Chassidic mysticism
+    - Chasidus
+  description: |
+    The school of Jewish mysticism and philosophy founded by the Baal Shem Tov in
+    the 18th century. Chabad Chassidus, developed by the Alter Rebbe and his successors,
+    emphasizes the intellectual comprehension of G-dliness, the unity of G-d permeating
+    all existence, and the divine soul within every Jew. It synthesizes Kabbalistic
+    ideas with a structured philosophical system (ChaBaD = Chochmah, Binah, Da'at:
+    wisdom, understanding, knowledge). The study of Chassidus is the foundation of
+    Chabad identity.
+
+- id: concept.hiskashrus
+  type: concept
+  primary_name: Hiskashrus
+  aliases:
+    - hiskashrus
+    - connection to the Rebbe
+    - spiritual bond
+  description: |
+    The Chassidic concept of spiritual attachment and bond between a Chassid and his
+    Rebbe. Hiskashrus involves much more than personal affection — it is a spiritual
+    connection through study of the Rebbe's Torah, following his directives, and
+    internalizing his teachings. The Frierdiker Rebbe emphasized that genuine
+    hiskashrus to him would sustain Chassidim even when physically separated.
+
+- id: concept.yechidus
+  type: concept
+  primary_name: Yechidus
+  aliases:
+    - private audience
+    - audience with the Rebbe
+    - the yechidus
+  description: |
+    A private audience with the Rebbe, in which a Chassid would enter alone into
+    the Rebbe's study for an intimate personal encounter. During yechidus, a Chassid
+    would share his spiritual state, receive guidance, and experience the Rebbe's
+    deeply personal attention to each soul. The Frierdiker Rebbe conducted thousands
+    of such audiences throughout his life.
+
+- id: concept.farbrengen
+  type: concept
+  primary_name: Farbrengen
+  aliases:
+    - farbreng
+    - Chassidic gathering
+    - Chassidic celebration
+  description: |
+    A Chassidic gathering — typically led by the Rebbe or a senior mashpia — featuring
+    the singing of niggunim (Chassidic melodies), the sharing of Chassidic stories and
+    teachings, and expressions of mutual encouragement in divine service. Farbrengens
+    are a central institution of Chabad life, serving as occasions for spiritual
+    elevation, communal bonding, and the transmission of Chassidic values.
+
+- id: concept.mashpia
+  type: concept
+  primary_name: Mashpia
+  aliases:
+    - spiritual mentor
+    - mashpiah
+    - spiritual guide
+  description: |
+    A spiritual mentor or guide in the Chassidic system. The mashpia occupies a crucial
+    role in the development of a Chassid, providing personal guidance in divine service,
+    accountability in spiritual growth, and transmission of the living Chassidic tradition.
+    The Frierdiker Rebbe maintained a network of mashpi'im throughout the communities
+    under his influence.
+
+- id: concept.mesiras_nefesh
+  type: concept
+  primary_name: Mesiras Nefesh
+  aliases:
+    - self-sacrifice
+    - mesiras nefesh
+    - dedication of one's soul
+    - self-devotion
+  description: |
+    Literally "the giving over of one's soul" — the readiness to sacrifice everything,
+    including one's life, for the sake of G-d, Torah, and the Jewish people. This is
+    perhaps the central theme of the Frierdiker Rebbe's biography. His behavior during
+    the 1927 Soviet arrest exemplified mesiras nefesh: refusing to capitulate to Soviet
+    demands, maintaining Jewish practice under threat of death, and inspiring thousands
+    by his example.
+
+- id: concept.bitachon
+  type: concept
+  primary_name: Bitachon
+  aliases:
+    - trust in G-d
+    - divine trust
+    - faith
+    - trust
+  description: |
+    Complete trust and reliance in G-d. In Chabad thought, bitachon goes beyond
+    intellectual faith — it is a living, active confidence that G-d will bring about
+    the good. The Frierdiker Rebbe demonstrated supreme bitachon during his imprisonment,
+    exile, and the Holocaust years, maintaining certainty in divine Providence even
+    amid catastrophic circumstances.
+
+- id: concept.emunah
+  type: concept
+  primary_name: Emunah
+  aliases:
+    - belief
+    - faith in G-d
+    - Jewish faith
+  description: |
+    Belief and faith in G-d — the foundational commitment of Jewish life. In Chabad
+    thought, emunah is not merely intellectual assent but a deep-seated awareness of
+    G-d's existence and involvement in creation. The Frierdiker Rebbe's entire life
+    was a testament to unwavering emunah, refusing to allow any power on earth to
+    diminish his faith.
+
+- id: concept.avodah
+  type: concept
+  primary_name: Avodah
+  aliases:
+    - divine service
+    - spiritual work
+    - service of G-d
+  description: |
+    Divine service — the work of refining oneself and serving G-d through prayer,
+    Torah study, and fulfillment of mitzvos. In Chassidus, avodah particularly refers
+    to the inner work of transforming one's character and elevating one's soul.
+    The Frierdiker Rebbe demanded genuine avodah from his Chassidim and modeled it
+    through his own intense personal devotion.
+
+- id: concept.bittul
+  type: concept
+  primary_name: Bittul
+  aliases:
+    - self-nullification
+    - bitul
+    - nullification of ego
+  description: |
+    The Chassidic ideal of self-nullification — setting aside the ego and personal
+    agenda to make room for divine awareness and G-d's will. Bittul is considered
+    the foundation of genuine Chassidic service. A true Chassid, in the Chabad model,
+    cultivates bittul toward G-d, Torah, and the Rebbe.
+
+- id: concept.nigleh
+  type: concept
+  primary_name: Nigleh
+  aliases:
+    - revealed Torah
+    - Talmud
+    - halacha
+    - exoteric Torah
+  description: |
+    The revealed (exoteric) dimension of Torah — Talmud, halacha (Jewish law), and
+    their commentaries. Tomchei Temimim's innovation was insisting on rigorous study
+    of both Nigleh and Chassidus (Pnimiyus haTorah), creating scholars who were
+    masters of both the practical law and the mystical depths of Torah.
+
+- id: concept.pnimiyus_hatorah
+  type: concept
+  primary_name: Pnimiyus HaTorah
+  aliases:
+    - inner dimension of Torah
+    - inner Torah
+    - esoteric Torah
+    - Kabbalah
+  description: |
+    The inner dimension of Torah — Kabbalistic and Chassidic teachings that reveal
+    the mystical depths behind the practical commandments and texts. Chabad's distinctive
+    contribution was making pnimiyus haTorah accessible and intellectually systematic
+    through the ChaBaD approach. The Frierdiker Rebbe was a master teacher of
+    pnimiyus haTorah.
+
+- id: concept.kiruv
+  type: concept
+  primary_name: Kiruv
+  aliases:
+    - outreach
+    - bringing Jews closer
+    - Jewish outreach
+  description: |
+    Outreach — the work of drawing Jews who have become distant from Torah observance
+    back to their heritage. The Frierdiker Rebbe was a pioneer of modern kiruv,
+    particularly in America where he challenged the assumption that American Jews
+    could not be reached. He established networks, schools, and camps specifically
+    to engage and reclaim unaffiliated American Jews.
+
+- id: concept.shluchim
+  type: concept
+  primary_name: Shluchim
+  aliases:
+    - emissaries
+    - messengers
+    - shliach
+    - shluchim of the Rebbe
+  description: |
+    Emissaries sent by the Rebbe to establish Chabad presence in communities
+    throughout the world. The system of shluchim was a key tool of the Frierdiker
+    Rebbe's global vision and was later massively expanded by the seventh Rebbe.
+    A shliach goes on behalf of the Rebbe to a given location, establishes a Chabad
+    house, and serves as a center of Jewish life and outreach.
+
+- id: concept.tanya
+  type: concept
+  primary_name: Tanya
+  aliases:
+    - Sefer shel Beinonim
+    - Likkutei Amarim
+    - the Tanya
+  description: |
+    The foundational text of Chabad Chassidus, authored by the Alter Rebbe (Rabbi
+    Shneur Zalman of Liadi) and published in 1796. Formally titled Likkutei Amarim
+    or Sefer shel Beinonim ("Book of the Intermediate Person"), it presents a complete
+    system of Chabad psychology and divine service. Every Chabad Chassid studies Tanya;
+    the Frierdiker Rebbe encouraged its widespread study and distribution.
+
+- id: concept.maamar
+  type: concept
+  primary_name: Ma'amar
+  aliases:
+    - maamar
+    - Chassidic discourse
+    - discours
+  description: |
+    A formal Chassidic discourse delivered by the Rebbe, typically at major occasions
+    such as Shabbos, Yom Tov, or special celebrations. A ma'amar presents deep
+    Chassidic ideas in a structured format. The Frierdiker Rebbe delivered hundreds
+    of ma'amarim, many of which were transcribed and form a major part of the Chabad
+    literary corpus.
+
+- id: concept.yevsektsiya
+  type: concept
+  primary_name: Yevsektsiya
+  aliases:
+    - Jewish Section
+    - Evsektsia
+    - the Jewish Communists
+    - the Section
+  description: |
+    The Jewish Section of the Soviet Communist Party, active from 1918 to 1930.
+    The Yevsektsiya was staffed by Jewish Communists who directed anti-religious
+    campaigns specifically against the Jewish community. They targeted synagogues,
+    yeshivas, rabbis, and Jewish cultural life. They saw Chabad in particular as a
+    dangerous counter-revolutionary force. The Yevsektsiya was directly responsible
+    for many of the persecutions faced by the Frierdiker Rebbe.
+
+- id: concept.gpu_nkvd
+  type: concept
+  primary_name: GPU / NKVD
+  aliases:
+    - GPU
+    - NKVD
+    - Soviet secret police
+    - Cheka
+    - OGPU
+  description: |
+    The successive Soviet secret police organizations — Cheka (1917), GPU/OGPU
+    (1922-1934), NKVD (1934-1946) — that carried out political repression in the
+    Soviet Union. The GPU arrested Rabbi Yosef Yitzchak in 1927. These organizations
+    ran the vast network of prisons, interrogation centers, and labor camps. Their
+    terror was the primary instrument of religious persecution in Soviet Russia.
+
+- id: concept.baal_teshuva
+  type: concept
+  primary_name: Baal Teshuva
+  aliases:
+    - baal teshuvah
+    - returnee
+    - one who returns
+    - penitent
+  description: |
+    One who returns to Jewish observance — a person who was not raised observant
+    and chooses to embrace a Torah life. The Frierdiker Rebbe had a particular
+    sensitivity for baalei teshuva and was a pioneer in creating pathways back to
+    Jewish identity. His work in America specifically targeted the large population
+    of Jews who had drifted from observance.
+
+- id: concept.torah_lishmah
+  type: concept
+  primary_name: Torah Lishmah
+  aliases:
+    - Torah for its own sake
+    - Torah lishma
+    - pure Torah study
+  description: |
+    The study of Torah purely for its own intrinsic value, without ulterior motives.
+    Torah lishmah is considered the ideal form of Torah study in Jewish tradition.
+    Tomchei Temimim was founded on this principle, and the Rashab's charge to his
+    students was to study both Nigleh and Chassidus with complete devotion and purity
+    of intention.
+
+- id: concept.niggun
+  type: concept
+  primary_name: Niggun
+  aliases:
+    - nigun
+    - Chassidic melody
+    - Chassidic song
+    - niggunnim
+  description: |
+    A Chassidic wordless melody or song. Niggunim are considered a direct expression
+    of the soul and a powerful tool of divine service. The Frierdiker Rebbe composed
+    and transmitted numerous niggunim, which continue to be sung in Chabad communities
+    worldwide. Singing a niggun can transcend intellectual barriers and touch the
+    deepest layers of the soul.
+
+- id: concept.cheder
+  type: concept
+  primary_name: Cheder
+  aliases:
+    - traditional Jewish school
+    - the cheder
+  description: |
+    Traditional Jewish elementary school, typically teaching young boys reading,
+    prayer, Torah, and Talmud. Under Soviet rule, the operation of cheders was
+    criminalized, yet Chabad maintained an underground network of cheders across
+    Soviet Russia at tremendous personal risk. The Frierdiker Rebbe was the driving
+    force behind these clandestine educational efforts.
+
+- id: concept.the_underground
+  type: concept
+  primary_name: The Underground Network
+  aliases:
+    - Chabad underground
+    - secret network
+    - clandestine yeshivos
+  description: |
+    The clandestine network of Jewish educational and religious institutions that
+    Rabbi Yosef Yitzchak maintained in Soviet Russia after the Communist takeover.
+    Operating secret cheders, underground yeshivos, mikvaos, and study groups in
+    defiance of Soviet law required extraordinary courage and coordination. Many
+    participants were arrested, exiled, or executed.

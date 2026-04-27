@@ -1,16 +1,158 @@
+- id: event.birth_of_rayatz
+  type: event
+  primary_name: Birth of Rabbi Yosef Yitzchak
+  aliases:
+    - Rayatz's birth
+    - born in Lubavitch
+  date:
+    gregorian: "1880-06-21"
+    hebrew: "12 Tammuz 5640"
+  place_id: place.lubavitch
+  description: |
+    Rabbi Yosef Yitzchak Schneersohn was born in Lubavitch on 12 Tammuz 5640
+    (June 21, 1880), to Rabbi Shalom Dovber and Rebbetzin Shterna Sara. His birth
+    in the very town that was the heart of Chabad set the stage for his life's journey.
+
+- id: event.founding_tomchei_temimim
+  type: event
+  primary_name: Founding of Tomchei Temimim
+  aliases:
+    - establishment of Tomchei Temimim
+    - founding of the yeshiva
+  date:
+    gregorian: "1897"
+    hebrew: "5657"
+  place_id: place.lubavitch
+  description: |
+    In 1897, the Rashab (Rabbi Shalom Dovber) founded Tomchei Temimim yeshiva in
+    Lubavitch. This was one of the most consequential acts of his leadership, creating
+    an institution that would produce the "soldiers" of Chabad. The yeshiva combined
+    rigorous study of both Chassidus and Nigleh (Talmud/halacha). Rabbi Yosef Yitzchak
+    was deeply involved in its development from the beginning.
+
+- id: event.yarmarka_incident
+  type: event
+  primary_name: The Yarmarka Incident
+  aliases:
+    - 1891 fair incident
+    - the merchant's challenge
+  date:
+    gregorian: "1891"
+  place_id: place.lubavitch
+  description: |
+    A formative childhood incident in 1891 when the young Yosef Yitzchak, at age
+    eleven, encountered a merchant at the Lubavitch fair who challenged the value of
+    traditional Jewish life. The Rashab used this episode to teach his son about
+    standing firm in one's identity and the importance of mesiras nefesh.
+
+- id: event.wwi_displacement
+  type: event
+  primary_name: World War I Displacement
+  aliases:
+    - wartime displacement from Lubavitch
+    - leaving Lubavitch
+  date:
+    gregorian: "1915"
+  place_id: place.lubavitch
+  description: |
+    During World War I, the Schneersohn family and the Chabad community were forced
+    to flee Lubavitch as the front approached. This ended 102 years of Chabad being
+    centered in the town of Lubavitch, though the movement retained its name. The
+    Rashab eventually settled in Rostov-on-Don.
+
+- id: event.russian_revolution
+  type: event
+  primary_name: Russian Revolution
+  aliases:
+    - October Revolution
+    - the Bolshevik takeover
+  date:
+    gregorian: "1917-11-07"
+  place_id: place.russia
+  description: |
+    The Bolshevik Revolution of October 1917 (November by the Western calendar) brought
+    the Communist Party to power in Russia. This seismic event fundamentally changed
+    the conditions for Jewish religious life. The new regime's militant atheism and
+    its Yevsektsiya (Jewish Section) directly targeted Chabad and all forms of
+    traditional Jewish observance.
+
+- id: event.rashab_passing
+  type: event
+  primary_name: Passing of the Rashab
+  aliases:
+    - death of the Rashab
+    - Rashab's yahrzeit
+    - 2 Nissan 1920
+  date:
+    gregorian: "1920-03-21"
+    hebrew: "2 Nissan 5680"
+  place_id: place.rostov
+  description: |
+    The Rashab (Rabbi Shalom Dovber, fifth Rebbe) passed away on 2 Nissan 5680
+    (March 21, 1920) in Rostov-on-Don. His passing during a period of intense historical
+    upheaval — the Russian Civil War still raging — placed the full burden of Chabad
+    leadership on his son Rabbi Yosef Yitzchak.
+
+- id: event.rayatz_becomes_rebbe
+  type: event
+  primary_name: Rabbi Yosef Yitzchak Becomes Rebbe
+  aliases:
+    - Rayatz becomes Rebbe
+    - assumption of leadership 1920
+  date:
+    gregorian: "1920"
+    hebrew: "5680"
+  place_id: place.rostov
+  description: |
+    Following his father's passing in Rostov in 1920, Rabbi Yosef Yitzchak Schneersohn
+    accepted the mantle of Chabad leadership as the sixth Lubavitcher Rebbe. He
+    immediately faced the twin challenges of the ongoing Russian Civil War and the
+    newly established Bolshevik campaign against religion.
+
+- id: event.chana_wedding
+  type: event
+  primary_name: Wedding of Chana and Rashag
+  aliases:
+    - Chana's wedding
+    - wedding of the eldest daughter
+  date:
+    gregorian: "1926"
+  description: |
+    The wedding of Rabbi Yosef Yitzchak's eldest daughter Chana to Rabbi Shmaryahu
+    Gurary (the Rashag) in 1926. This was a joyous occasion celebrated by the Chabad
+    community amid the difficult conditions of Soviet rule.
+
 - id: event.arrest_1927
   type: event
   primary_name: 1927 Arrest
   aliases:
     - Soviet arrest
     - imprisonment
+    - the midnight arrest
   date:
     gregorian: "1927-06-15"
     hebrew: "15 Sivan 5687"
   place_id: place.leningrad
   description: |
-    The Rayatz was arrested by Soviet authorities and sentenced to death,
-    later commuted to exile.
+    On the night of June 15, 1927, Soviet GPU agents led by Agent Nachmanson arrested
+    Rabbi Yosef Yitzchak at his home in Leningrad. He was taken to Spalerno Prison,
+    interrogated intensively, and sentenced to death. The sentence was later commuted
+    to three years in Kostroma following international pressure. His demeanor during
+    interrogation — fearless, dignified, unbroken — became legendary.
+
+- id: event.death_sentence_commuted
+  type: event
+  primary_name: Death Sentence Commuted
+  aliases:
+    - commutation of sentence
+    - sentence reduced
+  date:
+    gregorian: "1927"
+  description: |
+    Following intense international diplomatic pressure — including from the German
+    ambassador and American advocates including Max Rhoade — the Soviet death sentence
+    against Rabbi Yosef Yitzchak was commuted first to three years of exile in Kostroma,
+    and subsequently to expulsion from the Soviet Union entirely.
 
 - id: event.exile_1927
   type: event
@@ -18,18 +160,160 @@
   aliases:
     - expulsion
     - forced exile
+    - exile to the West
   date:
     gregorian: "1927-10-03"
   description: |
-    After international pressure, the Rayatz was exiled from the Soviet Union.
+    After international pressure, the Rayatz was exiled from the Soviet Union on
+    October 3, 1927. Rather than serving his sentence in Kostroma, he was permitted
+    to leave the country. This was both a personal deliverance and a profound loss,
+    as he was forced to leave behind hundreds of thousands of Jewish souls under
+    Soviet rule.
+
+- id: event.arrival_riga
+  type: event
+  primary_name: Arrival in Riga
+  aliases:
+    - settling in Riga
+    - Riga period begins
+  date:
+    gregorian: "1927"
+  place_id: place.riga
+  description: |
+    Following his expulsion from the Soviet Union in late 1927, Rabbi Yosef Yitzchak
+    settled in Riga, Latvia. He established his court there and made Riga the base
+    for international Chabad operations, maintaining contact with underground networks
+    in Soviet Russia while directing the movement globally.
+
+- id: event.chaya_mushka_wedding
+  type: event
+  primary_name: Wedding of Chaya Mushka and Menachem Mendel
+  aliases:
+    - the royal wedding
+    - 1928 wedding
+    - wedding of the middle daughter
+  date:
+    gregorian: "1928-11-14"
+    hebrew: "14 Kislev 5689"
+  place_id: place.warsaw
+  description: |
+    On 14 Kislev 5689 (November 14, 1928), Rabbi Yosef Yitzchak's middle daughter
+    Chaya Mushka married Rabbi Menachem Mendel Schneersohn in Warsaw. The wedding was
+    a major event in the Chabad world, celebrated with thousands of Chassidim. The date
+    14 Kislev is celebrated annually in Chabad as a festive day. The groom would later
+    become the seventh Lubavitcher Rebbe.
+
+- id: event.move_to_warsaw
+  type: event
+  primary_name: Move to Warsaw
+  aliases:
+    - relocating from Riga to Warsaw
+    - Warsaw period begins
+  date:
+    gregorian: "1933"
+  place_id: place.warsaw
+  description: |
+    In 1933 Rabbi Yosef Yitzchak moved his court from Riga to Warsaw, Poland. Warsaw
+    had a massive Jewish population and offered a more central location for Chabad
+    activities in Europe. He established his court and yeshiva in the Warsaw-Otwock
+    area.
+
+- id: event.german_invasion_poland
+  type: event
+  primary_name: German Invasion of Poland
+  aliases:
+    - invasion of Poland 1939
+    - start of WWII
+    - September 1939
+  date:
+    gregorian: "1939-09-01"
+  place_id: place.poland
+  description: |
+    Germany invaded Poland on September 1, 1939, beginning World War II. Warsaw was
+    bombed and quickly fell under siege. Rabbi Yosef Yitzchak was in Otwock, near
+    Warsaw, when the invasion began. The catastrophe that would destroy Polish Jewry
+    had commenced. His rescue from Nazi-occupied Warsaw became an urgent international
+    priority.
+
+- id: event.rescue_from_warsaw
+  type: event
+  primary_name: Rescue Mission from Warsaw
+  aliases:
+    - escape from Warsaw
+    - wartime rescue
+    - flight from Poland
+  date:
+    gregorian: "1940-01"
+  place_id: place.warsaw
+  description: |
+    Through the efforts of American Chabad representatives and with assistance from
+    the U.S. State Department, a rescue mission was organized to extract Rabbi Yosef
+    Yitzchak from Nazi-occupied Warsaw in early 1940. The operation involved diplomatic
+    negotiations, German military intermediaries, and considerable danger. The Rebbe,
+    with his family, was brought via Berlin and then Amsterdam to board a ship for
+    the United States.
 
 - id: event.escapes_ww2
   type: event
   primary_name: Escape from Nazi Europe
   aliases:
-    - flight from Poland
     - wartime escape
+    - the voyage
+    - fleeing Nazi Europe
   date:
     gregorian: "1940"
   description: |
-    The Rayatz and his family escaped from Nazi-occupied Europe to America.
+    Rabbi Yosef Yitzchak and his immediate family escaped from Nazi-occupied Europe
+    in early 1940. The journey involved transit through several countries before
+    boarding a ship for America. Not all his family could be saved; his daughter
+    Sheina and son-in-law remained behind and perished in the Holocaust.
+
+- id: event.arrival_new_york
+  type: event
+  primary_name: Arrival in New York
+  aliases:
+    - landing in New York
+    - March 9 1940
+    - arrival in America
+  date:
+    gregorian: "1940-03-09"
+  place_id: place.new_york
+  description: |
+    On March 9, 1940, Rabbi Yosef Yitzchak Schneersohn arrived in New York Harbor,
+    welcomed by a large crowd of Chassidim and supporters. This date marks the beginning
+    of the American chapter of Chabad. He quickly set about establishing institutions
+    and issuing a rallying call that "America is not different" — meaning American Jews
+    must maintain full Torah observance.
+
+- id: event.founding_tomchei_temimim_america
+  type: event
+  primary_name: Founding of Tomchei Temimim in America
+  aliases:
+    - American Tomchei Temimim
+    - Brooklyn yeshiva founded
+  date:
+    gregorian: "1941"
+  place_id: place.brooklyn
+  description: |
+    In 1941, Rabbi Yosef Yitzchak established Tomchei Temimim yeshiva in Brooklyn,
+    transplanting the flagship Chabad educational institution to American soil. This
+    was a critical step in building a sustainable Chabad presence in the New World
+    and ensuring the continuity of authentic Chassidic education.
+
+- id: event.rayatz_passing
+  type: event
+  primary_name: Passing of Rabbi Yosef Yitzchak
+  aliases:
+    - Frierdiker Rebbe's passing
+    - 10 Shvat 1950
+    - Yud Shvat
+  date:
+    gregorian: "1950-01-28"
+    hebrew: "10 Shvat 5710"
+  place_id: place.brooklyn
+  description: |
+    Rabbi Yosef Yitzchak Schneersohn passed away on 10 Shvat 5710 (January 28, 1950)
+    in his room at 770 Eastern Parkway, Brooklyn. His passing brought to an end his
+    extraordinary life spanning the last years of Czarist Russia, the Soviet period,
+    exile, the Holocaust, and the rebuilding in America. The date 10 Shvat (Yud Shvat)
+    is observed as a major day in the Chabad calendar.

@@ -8,22 +8,179 @@
   type: time
   primary_name: "1920"
   aliases: []
-  description: Year the Rayatz became Rebbe
+  description: Year the Rayatz became Rebbe following the Rashab's passing
 
 - id: time.1927
   type: time
   primary_name: "1927"
   aliases: []
-  description: Year of arrest and exile
+  description: Year of arrest, imprisonment, death sentence, and exile from Soviet Union
 
 - id: time.1940
   type: time
   primary_name: "1940"
   aliases: []
-  description: Year of arrival in America
+  description: Year of escape from Nazi Europe and arrival in America
 
 - id: time.1950
   type: time
   primary_name: "1950"
   aliases: []
-  description: Year of the Rayatz's passing
+  description: Year of the Rayatz's passing on 10 Shvat
+
+- id: time.czarist_era
+  type: time
+  primary_name: Czarist Russia Era
+  aliases:
+    - under the Czar
+    - imperial Russia
+    - pre-revolutionary Russia
+  start: "1800"
+  end: "1917"
+  description: |
+    The period of Czarist Russian rule, ending with the Revolution of 1917. During
+    this era, Jews lived within the Pale of Settlement under periodic persecution
+    (pogroms), restrictive laws, and forced conscription, yet also maintained vibrant
+    communal and religious life. Chabad flourished in this period, with Lubavitch as
+    its center. The first five Lubavitcher Rebbes lived and led during this era.
+
+- id: time.soviet_revolution
+  type: time
+  primary_name: Soviet Revolution
+  aliases:
+    - the Revolution
+    - Bolshevik Revolution
+    - 1917 Revolution
+  start: "1917"
+  end: "1921"
+  description: |
+    The period of the Russian Revolution and subsequent Civil War (1917-1921). The
+    Bolshevik seizure of power in October 1917 initiated the Communist regime and
+    its militant atheism. For Jews, this era was paradoxically both a liberation from
+    Czarist persecution and the beginning of a far more systematic assault on Jewish
+    religious life.
+
+- id: time.soviet_persecution
+  type: time
+  primary_name: Soviet Persecution of Religion
+  aliases:
+    - Soviet anti-religious campaign
+    - Communist persecution
+    - the Soviet era
+  start: "1918"
+  end: "1940"
+  description: |
+    The period of systematic Soviet campaign against religion, particularly intense
+    in the 1920s-1930s. The Yevsektsiya targeted Jewish religious institutions;
+    the GPU/NKVD arrested rabbis and religious leaders. Synagogues, yeshivos, and
+    mikvaos were closed or confiscated. The Frierdiker Rebbe led Chabad's underground
+    resistance during this period until his exile in 1927.
+
+- id: time.great_purge
+  type: time
+  primary_name: The Great Purge
+  aliases:
+    - the Terror
+    - Stalinist purges
+    - the Purge
+    - 1936-1938
+  start: "1936"
+  end: "1938"
+  description: |
+    The period of Stalin's most intense political repression, with mass arrests,
+    show trials, and executions. While the Frierdiker Rebbe was already in exile,
+    many Chabad Chassidim who remained in the Soviet Union were caught up in this
+    terror. The Great Purge devastated the underground Jewish networks that had
+    survived the 1920s persecution.
+
+- id: time.interwar_period
+  type: time
+  primary_name: Interwar Period
+  aliases:
+    - between the wars
+    - interwar Europe
+    - 1918-1939
+  start: "1918"
+  end: "1939"
+  description: |
+    The period between World War I and World War II. For the Frierdiker Rebbe, this
+    encompassed his leadership from 1920, his 1927 imprisonment and exile, his years
+    in Riga (1927-1933) and Warsaw/Otwock (1933-1939), and the celebrated wedding
+    of Chaya Mushka in 1928. A period of intense Chabad activity across Europe despite
+    political instability.
+
+- id: time.wwii
+  type: time
+  primary_name: World War II
+  aliases:
+    - WWII
+    - the war
+    - Second World War
+  start: "1939"
+  end: "1945"
+  description: |
+    The global conflict initiated by Germany's invasion of Poland on September 1, 1939.
+    For the Frierdiker Rebbe, WWII meant rescue from Warsaw, the sea voyage to America,
+    and the terrible news of the Holocaust unfolding in Europe. His youngest daughter
+    Sheina and son-in-law perished during this period. From America, he directed relief
+    and rescue efforts and built Chabad institutions.
+
+- id: time.holocaust
+  type: time
+  primary_name: The Holocaust
+  aliases:
+    - the Shoah
+    - Churban Europe
+    - Nazi genocide
+  start: "1941"
+  end: "1945"
+  description: |
+    The systematic genocide of six million Jews by Nazi Germany and its collaborators
+    during World War II. For Chabad, the Holocaust destroyed the Eastern European
+    communities that had been the movement's heartland. The Frierdiker Rebbe mourned
+    profoundly from America while channeling his energies into building new Jewish
+    life. His daughter Sheina and son-in-law were among the victims.
+
+- id: time.american_building
+  type: time
+  primary_name: Building Chabad in America
+  aliases:
+    - American decade
+    - 1940s Chabad
+    - post-arrival America
+  start: "1940"
+  end: "1950"
+  description: |
+    The decade from the Frierdiker Rebbe's arrival in New York (March 1940) to his
+    passing (January 1950). During these ten years, he established 770 Eastern Parkway
+    as world Chabad headquarters, founded Tomchei Temimim in Brooklyn, launched
+    outreach campaigns, established summer camps, and laid the institutional foundations
+    for all subsequent Chabad growth.
+
+- id: time.postwar_rebuilding
+  type: time
+  primary_name: Post-War Rebuilding
+  aliases:
+    - postwar era
+    - 1945-1950
+    - after the Holocaust
+  start: "1945"
+  end: "1950"
+  description: |
+    The period immediately following World War II, during which surviving Jewish
+    communities attempted to rebuild. For Chabad, this meant welcoming Holocaust
+    survivors, resettling displaced Chassidim, and continuing the American building
+    work. The Frierdiker Rebbe's final years (1945-1950) were marked by both mourning
+    for the destroyed European communities and hope for Jewish renewal.
+
+- id: time.1928
+  type: time
+  primary_name: "1928"
+  aliases: []
+  description: Year of Chaya Mushka's wedding to Menachem Mendel in Warsaw (14 Kislev)
+
+- id: time.1897
+  type: time
+  primary_name: "1897"
+  aliases: []
+  description: Year Tomchei Temimim yeshiva was founded in Lubavitch by the Rashab

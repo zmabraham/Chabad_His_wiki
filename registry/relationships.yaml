@@ -18,7 +18,7 @@ from: person.shmaryahu_gurary
 rel: son_in_law
 to: person.yosef_yitzchak
 ---
-from: person.mushka
+from: person.nechama_dina
 rel: wife
 to: person.yosef_yitzchak
 ---
