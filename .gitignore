@@ -6,6 +6,7 @@ corpus/
 
 # Build outputs
 site/public/data/
+!site/public/data/pages/
 site/dist/
 site/node_modules/
 
