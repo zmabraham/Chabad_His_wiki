@@ -222,10 +222,10 @@ function renderBookText(rawText) {
 
   for (const line of lines) {
     if (skipFirst2 < 2 && line.startsWith('#')) { skipFirst2++; continue; }
-    if (line.startsWith('======')) {
-      html += '<div class="section-title">';
-    } else if (line === '============================================================') {
+    if (line === '============================================================') {
       html += '</div>';
+    } else if (line.startsWith('======')) {
+      html += '<div class="section-title">';
     } else if (line.trim() === '') {
       html += '<br>';
     } else {
