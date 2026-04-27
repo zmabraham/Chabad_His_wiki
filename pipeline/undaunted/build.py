@@ -53,9 +53,14 @@ def build_json(
     ]
     (output_dir / "relationships.json").write_text(json.dumps(relationships_data, indent=2))
 
-    # Chapters
+    # Chapters — omit page ranges when corpus not included
     chapters_data = [
-        {"num": ch.num, "title": ch.title, "first": ch.first, "last": ch.last}
+        {
+            "num": ch.num,
+            "title": ch.title,
+            "first": ch.first if include_corpus else 0,
+            "last": ch.last if include_corpus else 0,
+        }
         for ch in registry.chapters
     ]
     (output_dir / "chapters.json").write_text(json.dumps(chapters_data, indent=2))
